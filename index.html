@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 <meta name="theme-color" content="#0e5748">
-<title>Revisão 60+ · Farmacoterapia do Idoso · REMUME-BH 2024 + CEAF · Beers 2023</title>
+<title>Revisão 60+ · Farmacoterapia da Pessoa Idosa · REMUME-BH 01/2026 + CEAF · Beers 2023</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
@@ -206,7 +206,7 @@ footer p{margin-bottom:8px}
 
 /* MOBILE */
 @media (max-width:860px){
-  .hero-grid,.gk-grid,f-grid,.f-grid{grid-template-columns:1fr}
+  .hero-grid,.gk-grid,.f-grid{grid-template-columns:1fr}
   .hero-grid{gap:32px}
   .rx-card{transform:none}
   .stats{grid-template-columns:repeat(2,1fr)}
@@ -237,12 +237,18 @@ footer p{margin-bottom:8px}
   .print-head{border-bottom:3px solid var(--teal);padding-bottom:12px;margin-bottom:18px}
   .print-head h2{color:var(--teal-deep);font-size:1.3rem}
   .print-head p{font-size:.8rem;color:#333;margin-top:4px}
-  .print-fields{display:flex;gap:30px;margin-top:14px;font-size:.8rem}
+  .print-fields{display:flex;gap:30px;margin-top:14px;font-size:.8rem;flex-wrap:wrap}
   .print-fields span{border-bottom:1px solid #999;min-width:160px;display:inline-block}
   .res-band{border:2px solid var(--teal-deep);background:#fff;color:#000}
   .rb-l{color:#444}
   .mcard,.ixcard,.okbox,.burden{box-shadow:none;break-inside:avoid;animation:none}
   .bd,.sev,.og,.chip{-webkit-print-color-adjust:exact;print-color-adjust:exact}
+  /* Observações na impressão */
+  #obsPrintSection{display:block!important;page-break-inside:avoid;margin-top:28px;padding:18px 22px;border:2px solid var(--teal);border-radius:10px;background:#fff}
+  #obsPrintSection h4{color:var(--teal-deep);font-family:'Bricolage Grotesque',sans-serif;font-size:1.1rem;margin-bottom:10px}
+  #obsPrintSection .obs-content{font-size:.92rem;line-height:1.7;color:#000;white-space:pre-wrap;word-wrap:break-word}
+  #obsPrintSection .obs-blank{min-height:150px;background-image:repeating-linear-gradient(to bottom,transparent,transparent 27px,#9fb3ac 27px,#9fb3ac 28px)}
+  #obsPrintSection .obs-meta{margin-top:22px;padding-top:10px;border-top:1px dashed #999;font-size:.78rem;color:#333}
 }
 </style>
 </head>
@@ -250,8 +256,8 @@ footer p{margin-bottom:8px}
 
 <nav class="no-print">
   <div class="nav-in">
-    <div class="brand"><span class="bx">60+</span><div>Revisão 60+<small>FARMACOTERAPIA DO IDOSO</small></div></div>
-    <span class="sus">SUS · BH · REMUME 01/2024</span>
+    <div class="brand"><span class="bx">60+</span><div>Revisão 60+<small>FARMACOTERAPIA DA PESSOA IDOSA</small></div></div>
+    <span class="sus">SUS · BH · REMUME 01/2026</span>
     <div class="nav-links">
       <a href="#guia">① Informativo</a>
       <a href="#tabela">② Tabelas REMUME + CEAF</a>
@@ -264,8 +270,8 @@ footer p{margin-bottom:8px}
   <div class="wrap hero-grid">
     <div class="rv">
       <div class="kicker">ASSISTÊNCIA FARMACÊUTICA · SMSA/PBH</div>
-      <h1>Prescrever para quem envelhece exige <em>outra régua</em>.</h1>
-      <p class="lead">Ferramenta de apoio ao farmacêutico do SUS-BH para revisão da farmacoterapia de pessoas idosas, cruzando <strong>exclusivamente</strong> os medicamentos da <strong>REMUME-BH 01/2024</strong> e do <strong>CEAF/SES-MG (02/2025)</strong> com os <strong>Critérios de Beers (AGS 2023)</strong>.</p>
+      <h1>Prescrever para a pessoa idosa exige <em>critérios próprios</em>.</h1>
+      <p class="lead">Ferramenta de apoio aos profissionais de saúde da rede SUS-BH para revisão da farmacoterapia de pessoas idosas, cruzando <strong>exclusivamente</strong> os medicamentos da <strong>REMUME-BH 01/2026</strong> e do <strong>CEAF/SES-MG (02/2025)</strong> com os <strong>Critérios de Beers (AGS 2023)</strong>.</p>
       <div class="hero-cta">
         <a class="btn btn-p" href="#analise">⌕ Analisar uma prescrição</a>
         <a class="btn btn-g" href="#tabela">Ver tabelas oficiais</a>
@@ -297,7 +303,7 @@ footer p{margin-bottom:8px}
   <div class="wrap">
     <div class="sec-head rv">
       <div class="kicker">SEÇÃO 01 · INFORMATIVO</div>
-      <h2>Por que a farmacoterapia do idoso precisa de revisão</h2>
+      <h2>Por que a farmacoterapia da pessoa idosa precisa de revisão</h2>
       <p>Envelhecer muda a absorção, a distribuição, o metabolismo e a excreção dos fármacos — e também a sensibilidade dos receptores. O que era dose segura aos 40 pode ser dose tóxica aos 75.</p>
     </div>
     <div class="gk-grid">
@@ -305,7 +311,7 @@ footer p{margin-bottom:8px}
         <div class="pk-step"><div class="pk-n">A</div><div><h4>Absorção</h4><p>pH gástrico elevado, menor motilidade e fluxo esplâncnico alterado mudam a velocidade (e às vezes a extensão) da absorção — atenção a quelantes e antiácidos.</p></div></div>
         <div class="pk-step"><div class="pk-n">D</div><div><h4>Distribuição</h4><p>Menos água e massa magra, mais gordura e menos albumina: fármacos lipofílicos acumulam (diazepam) e a fração livre de fenitoína e varfarina aumenta.</p></div></div>
         <div class="pk-step"><div class="pk-n">M</div><div><h4>Metabolismo</h4><p>Menor fluxo hepático e atividade do citocromo P450 prolongam a meia-vida de muitos fármacos; a fase I (oxidação) é a mais comprometida.</p></div></div>
-        <div class="pk-step"><div class="pk-n">E</div><div><h4>Excreção</h4><p>A TFG cai cerca de 1 mL/min/ano após os 40. Mesmo com creatinina “normal”, o idoso elimina menos: digoxina, metformina, gabapentina e aminoglicosídeos exigem ajuste renal.</p></div></div>
+        <div class="pk-step"><div class="pk-n">E</div><div><h4>Excreção</h4><p>A TFG cai cerca de 1 mL/min/ano após os 40. Mesmo com creatinina “normal”, a pessoa idosa elimina menos: digoxina, metformina, gabapentina e aminoglicosídeos exigem ajuste renal.</p></div></div>
         <div class="pk-step"><div class="pk-n">＋</div><div><h4>Farmacodinâmica</h4><p>Maior sensibilidade a benzodiazepínicos, opioides, anticoagulantes e anticolinérgicos — a mesma concentração produz mais queda, mais delirium, mais sangramento.</p></div></div>
       </div>
       <div class="rv">
@@ -337,9 +343,9 @@ footer p{margin-bottom:8px}
       <div class="sbar">
         <h3 style="font-size:1.02rem;color:var(--teal-deep);margin-bottom:14px">Como levar o achado ao prescritor</h3>
         <ol>
-          <li data-i="PASSO 01"><b>Dados do paciente</b>Idade, peso, TFG/ClCr, lista completa (incluindo OTC e fitoterápicos) e síndromes geriátricas.</li>
-          <li data-i="PASSO 02"><b>Risco documentado</b>Cite a fonte: Beers 2023, regra de interação, carga anticolinérgica — não apenas opinião.</li>
-          <li data-i="PASSO 03"><b>Alternativa da REMUME/CEAF</b>Sempre que possível, proponha a troca disponível na rede e a estratégia de retirada gradual.</li>
+          <li data-i="PASSO 01"><b>Dados do paciente</b>Idade, peso, TFG/ClCr, lista completa (incluindo medicamentos isentos de prescrição, suplementos e fitoterápicos) e síndromes geriátricas.</li>
+          <li data-i="PASSO 02"><b>Risco documentado</b>Cite a fonte (Beers 2023, regra de interação, carga anticolinérgica), não apenas opinião.</li>
+          <li data-i="PASSO 03"><b>Alternativa da REMUME/CEAF</b>Sempre que possível, proponha a substituição disponível na rede e a estratégia de retirada gradual.</li>
           <li data-i="PASSO 04"><b>Plano de seguimento</b>O que monitorar (sódio, potássio, RNI, TSH, sinais de queda) e quando reavaliar a decisão.</li>
         </ol>
       </div>
@@ -352,14 +358,14 @@ footer p{margin-bottom:8px}
   <div class="wrap">
     <div class="sec-head rv">
       <div class="kicker">SEÇÃO 02 · CONSULTA RÁPIDA</div>
-      <h2>Tabelas oficiais: REMUME-BH 2024 e CEAF/SES-MG</h2>
+      <h2>Tabelas oficiais: REMUME-BH 01/2026 e CEAF/SES-MG</h2>
       <p>Apenas os medicamentos dos documentos oficiais. Escolha a aba, busque e confira risco e pontos de discussão com o prescritor.</p>
       <div class="legend" style="margin-top:14px">
         <span class="bd ev">EVITAR (BEERS)</span><span class="bd ca">CAUTELA</span><span class="bd mo">MONITORAR / AJUSTAR</span><span class="bd no">SEM RESTRIÇÃO ESPECÍFICA</span>
       </div>
     </div>
     <div class="tabs rv">
-      <button class="tab-btn active" id="tabR" onclick="setTab('R')">REMUME-BH 2024<small id="cntR"></small></button>
+      <button class="tab-btn active" id="tabR" onclick="setTab('R')">REMUME-BH 01/2026<small id="cntR"></small></button>
       <button class="tab-btn" id="tabC" onclick="setTab('C')">CEAF — Componente Especializado<small id="cntC"></small></button>
     </div>
     <div class="toolbar rv">
@@ -367,19 +373,20 @@ footer p{margin-bottom:8px}
       <select id="tblClass"><option value="">Todas as classes</option></select>
       <span class="mono" id="tblCount" style="color:var(--ink2)"></span>
     </div>
-    <div class="tbl-wrap rv"><table id="tbl"><thead><tr><th style="width:190px">Medicamento</th><th style="width:110px">Situação no idoso</th><th>Principais riscos em idosos</th><th>O que discutir com o prescritor</th></tr></thead><tbody id="tblBody"></tbody></table></div>
+    <div class="tbl-wrap rv"><table id="tbl"><thead><tr><th style="width:190px">Medicamento</th><th style="width:110px">Situação na pessoa idosa</th><th>Principais riscos na pessoa idosa</th><th>O que discutir com o prescritor</th></tr></thead><tbody id="tblBody"></tbody></table></div>
     <div class="scroll-hint">← deslize a tabela para o lado →</div>
-    <p class="tbl-note rv">Fontes: REMUME — Versão 01/2024 (CFT/SMSA/BH, 402 apresentações) e Lista do CEAF/SES-MG atualizada em 24/02/2025. Diluentes e insumos não são indexados. A classificação segue os Critérios de Beers AGS 2023 e cautelas geriátricas reconhecidas.</p>
+    <p class="tbl-note rv">Fontes: REMUME versão 01/2026, 15ª edição (CFT/SMSA/BH, 406 apresentações), com classes terapêuticas conforme o documento; Lista do CEAF/SES-MG atualizada em 24/02/2025. Diluentes, insumos e o DIU de cobre não são indexados. A classificação segue os Critérios de Beers AGS 2023, alertas regulatórios (FDA/EMA) e cautelas geriátricas reconhecidas; a carga anticolinérgica usa a escala ACB.</p>
   </div>
 </section>
 
 <!-- SEÇÃO 3 -->
 <section id="analise" class="alt">
   <div class="wrap">
-    <div class="sec-head rv">
+    <!-- Cabeçalho explicativo removido da impressão via no-print -->
+    <div class="sec-head rv no-print">
       <div class="kicker">SEÇÃO 03 · ANÁLISE DE PRESCRIÇÃO</div>
       <h2>Monte a prescrição e verifique riscos e interações</h2>
-      <p>Digite para ver sugestões (clicáveis) ou cole uma lista separada por vírgulas. Todos os fármacos da REMUME-BH 2024 e do CEAF estão indexados — inclusive os sem risco específico, que retornam como <b>“sem restrição”</b>. Os selos indicam a origem: <span class="og og-r">REMUME-BH</span> <span class="og og-c">CEAF/SES-MG</span> <span class="og og-rc">AMBAS</span>.</p>
+      <p>Digite para ver sugestões (clicáveis) ou cole uma lista separada por vírgulas. Todos os fármacos da REMUME-BH 01/2026 e do CEAF estão indexados, inclusive os sem risco específico, que retornam como <b>“sem restrição”</b>. Os selos indicam a origem: <span class="og og-r">REMUME-BH</span> <span class="og og-c">CEAF/SES-MG</span> <span class="og og-rc">AMBAS</span>.</p>
     </div>
     <div class="checker rv">
       <div class="no-print">
@@ -400,12 +407,12 @@ footer p{margin-bottom:8px}
       <div id="resultados">
         <div class="print-only print-head">
           <h2>Parecer de Revisão de Farmacoterapia Geriátrica</h2>
-          <p>SUS Belo Horizonte · REMUME-BH 01/2024 + CEAF/SES-MG 02/2025 · Critérios de Beers AGS 2023 — ferramenta de apoio; não substitui avaliação clínica.</p>
+          <p>SUS Belo Horizonte · REMUME-BH 01/2026 + CEAF/SES-MG 02/2025 · Critérios de Beers AGS 2023. Ferramenta de apoio; não substitui avaliação clínica.</p>
           <div class="print-fields">
             <div>Data: <span></span></div>
             <div>Paciente: <span></span></div>
             <div>Prontuário: <span></span></div>
-            <div>Farmacêutico(a): <span></span></div>
+            <div>Profissional responsável: <span></span></div>
           </div>
         </div>
         <div class="res-band">
@@ -417,22 +424,26 @@ footer p{margin-bottom:8px}
           </div>
         </div>
         <div class="res-block">
-          <h3>⚠ Efeitos potencialmente adversos em idosos</h3>
+          <h3>⚠ Efeitos potencialmente adversos na pessoa idosa</h3>
           <p class="sub">Classificação segundo os Critérios de Beers 2023 e cautelas geriátricas específicas.</p>
           <div id="mpiList"></div>
         </div>
         <div class="res-block">
           <h3>⇄ Interações medicamentosas na prescrição</h3>
-          <p class="sub">Pares analisados entre os medicamentos selecionados, com relevância clínica no idoso.</p>
+          <p class="sub">Pares analisados entre os medicamentos selecionados, com relevância clínica na pessoa idosa.</p>
           <div id="ixList"></div>
         </div>
         <div class="res-block" id="blkBurd"></div>
+
+        <!-- SEÇÃO DE OBSERVAÇÕES: posicionada após os três blocos de resultado -->
+        <div id="obsPrintSection" class="no-print"></div>
+
         <div class="res-actions no-print">
           <button class="btn btn-g" id="btnAdjust">← Ajustar lista</button>
           <button class="btn btn-g" id="btnNew">Nova análise</button>
-          <button class="btn btn-p" onclick="window.print()">🖨 Imprimir parecer</button>
+          <button class="btn btn-p" id="btnPrint">🖨 Imprimir parecer</button>
         </div>
-        <p class="discl">PARECER DE APOIO — gerado exclusivamente a partir da REMUME-BH 01/2024, da lista do CEAF/SES-MG (24/02/2025) e dos Critérios de Beers AGS 2023. Não substitui a avaliação clínica individualizada nem a consulta aos documentos oficiais e às bulas. Interações aqui não listadas podem existir: considere a totalidade do esquema terapêutico, incluindo OTC e fitoterápicos.</p>
+        <p class="discl">PARECER DE APOIO: gerado exclusivamente a partir da REMUME-BH 01/2026, da lista do CEAF/SES-MG (24/02/2025), dos Critérios de Beers AGS 2023 e da escala de carga anticolinérgica (ACB). Não substitui a avaliação clínica individualizada nem a consulta aos documentos oficiais e às bulas. Podem existir interações não listadas: considere a totalidade do esquema terapêutico, incluindo medicamentos isentos de prescrição, suplementos e fitoterápicos.</p>
       </div>
     </div>
   </div>
@@ -441,9 +452,9 @@ footer p{margin-bottom:8px}
 <footer class="no-print">
   <div class="wrap f-grid">
     <div>
-      <h4>Revisão 60+ · Farmacoterapia do idoso no SUS-BH</h4>
-      <p>Ferramenta educacional e de apoio à decisão para farmacêuticos da rede pública de Belo Horizonte. Base de dados construída exclusivamente a partir da REMUME-BH Versão 01/2024 (CFT/SMSA/BH) e da Relação do Componente Especializado da Assistência Farmacêutica (CEAF) disponibilizada pela SES/MG em 24/02/2025.</p>
-      <p>Beers Criteria® é marca da American Geriatrics Society. As listas oficiais são atualizadas por atos da SMSA/PBH e da SES/MG — valide sempre a versão vigente.</p>
+      <h4>Revisão 60+ · Farmacoterapia da pessoa idosa no SUS-BH</h4>
+      <p>Ferramenta educacional e de apoio à decisão para profissionais de saúde da rede pública de Belo Horizonte. Base de dados construída exclusivamente a partir da REMUME-BH Versão 01/2026 (CFT/SMSA/BH, 15ª edição) e da Relação do Componente Especializado da Assistência Farmacêutica (CEAF) disponibilizada pela SES/MG em 24/02/2025.</p>
+      <p>Beers Criteria® é marca da American Geriatrics Society. As listas oficiais são atualizadas por atos da SMSA/PBH e da SES/MG: valide sempre a versão vigente.</p>
     </div>
     <div>
       <h4>Como usar</h4>
@@ -454,15 +465,15 @@ footer p{margin-bottom:8px}
 <div class="toast" id="toast"></div>
 
 <script>
-/* ============ BASE: REMUME-BH 01/2024 + CEAF/SES-MG 02/2025 ============
+/* ============ BASE: REMUME-BH 01/2026 + CEAF/SES-MG 02/2025 ============
    o: R=REMUME | C=CEAF | RC=ambas · b: ev|ca|mo|null · t: tags de interação
 ========================================================================= */
-const RDEF="Sem potencial de dano específico ao idoso descrito nos Critérios de Beers 2023. Ajustar dose por função renal ou hepática quando aplicável.";
+const RDEF="Sem potencial de dano específico à pessoa idosa descrito nos Critérios de Beers 2023. Ajustar dose por função renal ou hepática quando aplicável.";
 const DDEF="Manter indicação conforme a lista oficial, reavaliando resposta e necessidade periodicamente.";
 const D=[
-{i:"dipirona",n:"Dipirona",c:"Analgésicos e antipiréticos",o:"R",f:"sol oral 500 mg/mL · inj 2 mL",r:"Perfil favorável no idoso; raramente agranulocitose. Infusão rápida pode causar hipotensão.",d:"Analgésico e antitérmico de primeira linha no idoso; respeitar dose máxima diária."},
-{i:"paracetamol",n:"Paracetamol",c:"Analgésicos e antipiréticos",o:"R",f:"cp 500 mg · sol oral 200 mg/mL",r:"Seguro no idoso; risco hepatotóxico em altas doses, desnutrição ou etilismo. Preferir até 3 g/dia no idoso frágil.",d:"Boa alternativa aos AINEs para dor e febre; conferir a dose total diária."},
-{i:"fentanila",n:"Fentanila (injetável)",c:"Analgésicos opioides",o:"R",b:"ca",t:["opioid","sed"],r:"Opioide potente: depressão respiratória e sedação maiores no idoso; uso restrito a ambiente monitorado.",d:"Reduzir dose; nunca associar a benzodiazepínicos sem vigilância."},
+{i:"dipirona",n:"Dipirona",c:"Analgésicos e antipiréticos",o:"R",f:"sol oral 500 mg/mL · inj 2 mL",r:"Perfil favorável na pessoa idosa; raramente agranulocitose. Infusão rápida pode causar hipotensão.",d:"Analgésico e antitérmico de primeira linha na pessoa idosa; respeitar dose máxima diária."},
+{i:"paracetamol",n:"Paracetamol",c:"Analgésicos e antipiréticos",o:"R",f:"cp 500 mg · sol oral 200 mg/mL",r:"Seguro na pessoa idosa; risco hepatotóxico em altas doses, desnutrição ou etilismo. Preferir até 3 g/dia na pessoa idosa frágil.",d:"Boa alternativa aos AINEs para dor e febre; conferir a dose total diária."},
+{i:"fentanila",n:"Fentanila (injetável)",c:"Analgésicos opioides",o:"R",b:"ca",t:["opioid","sed"],r:"Opioide potente: depressão respiratória e sedação maiores na pessoa idosa; uso restrito a ambiente monitorado.",d:"Reduzir dose; nunca associar a benzodiazepínicos sem vigilância."},
 {i:"metadona",n:"Metadona",c:"Analgésicos opioides",o:"RC",f:"cp 10 mg",b:"ca",t:["opioid","sed"],r:"Meia-vida longa e imprevisível, sedação acumulativa, constipação grave e prolongamento do QT.",d:"Menor dose possível; evitar com benzodiazepínicos e fármacos que prolongam QT; ECG periódico."},
 {i:"morfina",n:"Morfina",c:"Analgésicos opioides",o:"RC",f:"cp 30 mg · inj 10 mg/mL (CEAF: cp 10 mg, sol oral, cápsulas LC)",b:"ca",t:["opioid","sed"],r:"Sedação, depressão respiratória, constipação e retenção urinária; metabólitos acumulam na doença renal crônica.",d:"Ajustar por função renal; profilaxia de constipação; evitar com benzodiazepínicos."},
 {i:"tramadol",n:"Tramadol (injetável)",c:"Analgésicos opioides",o:"R",b:"ca",t:["opioid","sed"],r:"Tontura, náusea, quedas, hiponatremia e síndrome serotoninérgica com ISRS ou tricíclicos; reduz o limiar convulsivo.",d:"Evitar com benzodiazepínicos, ISRS e tricíclicos; titular lentamente."},
@@ -473,57 +484,57 @@ const D=[
 {i:"suxametonio",n:"Suxametônio (succinilcolina)",c:"Anestésicos e adjuvantes",o:"R"},
 {i:"etomidato",n:"Etomidato",c:"Anestésicos e adjuvantes",o:"R"},
 {i:"dextrocetamina",n:"Dextrocetamina",c:"Anestésicos e adjuvantes",o:"R",r:"Uso exclusivo do SAMU.",d:"Uso exclusivo do SAMU."},
-{i:"alprazolam",n:"Alprazolam",c:"Ansiolíticos e sedativos",o:"R",f:"cp 1 mg (sob regulação)",b:"ev",t:["benzo","sed"],r:"Beers: evitar todos os benzodiazepínicos no idoso — quedas, fraturas, delirium, prejuízo cognitivo e dependência.",d:"Descontinuação gradual (reduções de 10–25%); discutir higiene do sono e alternativas não farmacológicas."},
-{i:"diazepam",n:"Diazepam",c:"Ansiolíticos e sedativos",o:"R",f:"cp 10 mg · inj 5 mg/mL",b:"ev",t:["benzo","sed"],r:"Meia-vida longa: sedação prolongada, quedas, fraturas e delirium (Beers: evitar no idoso).",d:"Plano de retirada gradual com o prescritor; nunca suspender abruptamente."},
-{i:"midazolam",n:"Midazolam",c:"Ansiolíticos e sedativos",o:"R",b:"ev",t:["benzo","sed"],r:"Benzodiazepínico de curta ação: alto risco de delirium e depressão respiratória no idoso.",d:"Reavaliar necessidade de sedação; reduzir dose e monitorar."},
+{i:"alprazolam",n:"Alprazolam",c:"Ansiolíticos e sedativos",o:"R",f:"cp 1 mg (sob regulação)",b:"ev",t:["benzo","sed"],r:"Beers: evitar todos os benzodiazepínicos na pessoa idosa — quedas, fraturas, delirium, prejuízo cognitivo e dependência.",d:"Descontinuação gradual (reduções de 10–25%); discutir higiene do sono e alternativas não farmacológicas."},
+{i:"diazepam",n:"Diazepam",c:"Ansiolíticos e sedativos",o:"R",f:"cp 10 mg · inj 5 mg/mL",b:"ev",t:["benzo","sed"],r:"Meia-vida longa: sedação prolongada, quedas, fraturas e delirium (Beers: evitar na pessoa idosa).",d:"Plano de retirada gradual com o prescritor; nunca suspender abruptamente."},
+{i:"midazolam",n:"Midazolam",c:"Ansiolíticos e sedativos",o:"R",b:"ev",t:["benzo","sed"],r:"Benzodiazepínico de curta ação: alto risco de delirium e depressão respiratória na pessoa idosa.",d:"Reavaliar necessidade de sedação; reduzir dose e monitorar."},
 {i:"aas",n:"Ácido acetilsalicílico 100 mg",c:"Antiagregantes plaquetários",o:"R",b:"ca",t:["aine","antiag"],r:"Aceitável em prevenção secundária; Beers 2023: evitar iniciar em prevenção primária a partir de 70 anos (sangramento sem benefício claro).",d:"Confirmar indicação (secundária × primária), risco de sangramento digestivo e associações com anticoagulantes ou AINEs."},
 {i:"clopidogrel",n:"Clopidogrel",c:"Antiagregantes plaquetários",o:"RC",f:"cp 75 mg",b:"mo",t:["antiag"],r:"Sangramento maior quando associado a AAS, AINEs ou anticoagulantes; omeprazol reduz sua ativação.",d:"Definir indicação e duração da dupla antiagregação; discutir troca do inibidor de bomba de prótons."},
-{i:"desloratadina",n:"Desloratadina",c:"Antialérgicos (anti-histamínicos)",o:"R",r:"Anti-histamínico de segunda geração: sem carga anticolinérgica relevante; seguro no idoso."},
+{i:"desloratadina",n:"Desloratadina",c:"Antialérgicos (anti-histamínicos)",o:"R",r:"Anti-histamínico de segunda geração: sem carga anticolinérgica relevante; seguro na pessoa idosa."},
 {i:"dexclorfeniramina",n:"Dexclorfeniramina",c:"Antialérgicos (anti-histamínicos)",o:"R",f:"sol oral 0,4 mg/mL",b:"ev",t:["anticol","sed"],ach:3,r:"Anti-histamínico de primeira geração (Beers: evitar): sedação intensa, confusão, retenção urinária e constipação.",d:"Substituir por anti-histamínico de segunda geração (loratadina ou desloratadina, disponíveis na REMUME)."},
-{i:"loratadina",n:"Loratadina",c:"Antialérgicos (anti-histamínicos)",o:"R",f:"cp 10 mg · xarope",r:"Anti-histamínico de segunda geração: alternativa segura no idoso."},
-{i:"prometazina",n:"Prometazina",c:"Antialérgicos (anti-histamínicos)",o:"R",f:"cp 25 mg · inj",b:"ca",t:["anticol","sed"],ach:2,r:"Fenotiazina com forte ação sedativa e anticolinérgica: confusão, retenção urinária e hipotensão no idoso.",d:"Preferir anti-histamínico de segunda geração; nunca usar como indutor de sono."},
+{i:"loratadina",n:"Loratadina",c:"Antialérgicos (anti-histamínicos)",o:"R",f:"cp 10 mg · xarope",r:"Anti-histamínico de segunda geração: alternativa segura na pessoa idosa."},
+{i:"prometazina",n:"Prometazina",c:"Antialérgicos (anti-histamínicos)",o:"R",f:"cp 25 mg · inj",b:"ca",t:["anticol","sed"],ach:2,r:"Fenotiazina com forte ação sedativa e anticolinérgica: confusão, retenção urinária e hipotensão na pessoa idosa.",d:"Preferir anti-histamínico de segunda geração; nunca usar como indutor de sono."},
 {i:"acido-folico",n:"Ácido fólico",c:"Antianêmicos",o:"R"},
 {i:"sulfato-ferroso",n:"Sulfato ferroso",c:"Antianêmicos",o:"R",t:["ferro"],r:"Constipação e desconforto gástrico frequentes; absorção reduzida por cálcio e por inibidores de bomba de prótons.",d:"Tomar em jejum quando tolerado; separar do carbonato de cálcio e da levotiroxina."},
-{i:"isossorbida-dinitrato",n:"Isossorbida, dinitrato (sublingual)",c:"Antiarrítmicos e cardioativos",o:"R",b:"mo",t:["nitrato"],r:"Cefaleia, hipotensão ortostática e síncope; tolerância com uso contínuo sem intervalo livre de nitrato.",d:"Garantir intervalo livre de nitrato; orientar o idoso a levantar devagar; contraindicado com sildenafila."},
-{i:"isossorbida-mononitrato",n:"Isossorbida, mononitrato",c:"Antiarrítmicos e cardioativos",o:"R",b:"mo",t:["nitrato"],r:"Hipotensão ortostática e síncope no idoso; cefaleia.",d:"Vigiar pressão arterial; contraindicado com sildenafila."},
-{i:"nitroglicerina",n:"Nitroglicerina (injetável)",c:"Antiarrítmicos e cardioativos",o:"R",b:"mo",t:["nitrato"],r:"Hipotensão grave em uso venoso; maior vulnerabilidade no idoso.",d:"Uso em urgência com monitorização; contraindicada com sildenafila."},
+{i:"isossorbida-dinitrato",n:"Isossorbida, dinitrato (sublingual)",c:"Antiarrítmicos e cardioativos",o:"R",b:"mo",t:["nitrato"],r:"Cefaleia, hipotensão ortostática e síncope; tolerância com uso contínuo sem intervalo livre de nitrato.",d:"Garantir intervalo livre de nitrato; orientar a pessoa idosa a levantar devagar; contraindicado com sildenafila."},
+{i:"isossorbida-mononitrato",n:"Isossorbida, mononitrato",c:"Antiarrítmicos e cardioativos",o:"R",b:"mo",t:["nitrato"],r:"Hipotensão ortostática e síncope na pessoa idosa; cefaleia.",d:"Vigiar pressão arterial; contraindicado com sildenafila."},
+{i:"nitroglicerina",n:"Nitroglicerina (injetável)",c:"Antiarrítmicos e cardioativos",o:"R",b:"mo",t:["nitrato"],r:"Hipotensão grave em uso venoso; maior vulnerabilidade na pessoa idosa.",d:"Uso em urgência com monitorização; contraindicada com sildenafila."},
 {i:"adenosina",n:"Adenosina",c:"Antiarrítmicos e cardioativos",o:"R",r:"Uso agudo em taquiarritmia; sem restrição geriátrica específica."},
 {i:"amiodarona",n:"Amiodarona",c:"Antiarrítmicos e cardioativos",o:"R",f:"cp 200 mg · inj 50 mg/mL",b:"ca",t:["amio"],r:"Beers: evitar como primeira linha para manter ritmo sinusal. Toxicidade tireoidiana, pulmonar, hepática e ocular; prolonga o QT; múltiplas interações (digoxina, varfarina, estatinas).",d:"Revisar indicação e duração; TSH, função pulmonar e hepática periódicos; rastrear interações antes de associar fármacos."},
-{i:"metoprolol",n:"Metoprolol (injetável)",c:"Antiarrítmicos e cardioativos",o:"R",b:"mo",t:["betabloq"],r:"Bradicardia e hipotensão; uso venoso em urgência exige cautela no idoso.",d:"Vigiar frequência cardíaca e pressão arterial."},
+{i:"metoprolol",n:"Metoprolol (injetável)",c:"Antiarrítmicos e cardioativos",o:"R",b:"mo",t:["betabloq"],r:"Bradicardia e hipotensão; uso venoso em urgência exige cautela na pessoa idosa.",d:"Vigiar frequência cardíaca e pressão arterial."},
 {i:"propafenona",n:"Propafenona",c:"Antiarrítmicos e cardioativos",o:"R",f:"cp 300 mg (sob regulação)",b:"ca",r:"Antiarrítmico classe IC: risco pró-arrítmico; evitar em cardiopatia estrutural ou insuficiência cardíaca.",d:"Confirmar ausência de cardiopatia estrutural; ECG periódico; dispensação sob regulação."},
-{i:"verapamil",n:"Verapamil",c:"Antiarrítmicos e cardioativos",o:"R",f:"cp 80 mg",b:"ca",t:["bcc"],r:"Beers: evitar em insuficiência cardíaca com fração de ejeção reduzida; constipação grave no idoso; bradicardia e bloqueio AV com betabloqueador.",d:"Checar fração de ejeção; evitar associação com betabloqueador; manejar constipação; interage com digoxina, sinvastatina e carbamazepina."},
+{i:"verapamil",n:"Verapamil",c:"Antiarrítmicos e cardioativos",o:"R",f:"cp 80 mg",b:"ca",t:["bcc"],r:"Beers: evitar em insuficiência cardíaca com fração de ejeção reduzida; constipação grave na pessoa idosa; bradicardia e bloqueio AV com betabloqueador.",d:"Checar fração de ejeção; evitar associação com betabloqueador; manejar constipação; interage com digoxina, sinvastatina e carbamazepina."},
 {i:"beclometasona",n:"Beclometasona (aerossol oral)",c:"Antiasmáticos e broncodilatadores",o:"R",r:"Corticoide inalatório: efeito sistêmico baixo; candidíase oral e disfonia.",d:"Orientar enxágue bucal após o uso e revisar a técnica inalatória."},
-{i:"budesonida",n:"Budesonida",c:"Antiasmáticos e broncodilatadores",o:"RC",f:"spray nasal 50 mcg (REMUME) · cápsulas inalantes (CEAF)",r:"Corticoide inalatório ou nasal: seguro no idoso; candidíase oral na forma inalatória.",d:"Enxágue bucal após inalação."},
+{i:"budesonida",n:"Budesonida",c:"Antiasmáticos e broncodilatadores",o:"RC",f:"spray nasal 50 mcg (REMUME) · cápsulas inalantes (CEAF)",r:"Corticoide inalatório ou nasal: seguro na pessoa idosa; candidíase oral na forma inalatória.",d:"Enxágue bucal após inalação."},
 {i:"formoterol",n:"Formoterol",c:"Antiasmáticos e broncodilatadores",o:"RC",r:"Broncodilatador de longa ação: tremor e palpitações; nunca em monoterapia na asma.",d:"Confirmar associação com corticoide inalatório quando asma."},
-{i:"ipratropio",n:"Ipratrópio, brometo",c:"Antiasmáticos e broncodilatadores",o:"R",r:"Anticolinérgico inalatório com baixa absorção sistêmica; boa opção no idoso.",d:"Cautela teórica em glaucoma e obstrução urinária; observar sintomas."},
+{i:"ipratropio",n:"Ipratrópio, brometo",c:"Antiasmáticos e broncodilatadores",o:"R",r:"Anticolinérgico inalatório com baixa absorção sistêmica; boa opção na pessoa idosa.",d:"Cautela teórica em glaucoma e obstrução urinária; observar sintomas."},
 {i:"salbutamol",n:"Salbutamol",c:"Antiasmáticos e broncodilatadores",o:"R",r:"Taquicardia, tremor e hipocalemia em doses altas; usar espaçador.",d:"Vigiar sintomas cardiovasculares; checar técnica inalatória; atenção com betabloqueador associado."},
 {i:"salmeterol",n:"Salmeterol + fluticasona",c:"Antiasmáticos e broncodilatadores",o:"R",r:"Associação de longa ação: tremor, palpitações; candidíase oral pelo corticoide.",d:"Enxágue bucal; confirmar indicação em asma ou DPOC."},
-{i:"fluticasona",n:"Fluticasona (nasal)",c:"Antiasmáticos e broncodilatadores",o:"R",r:"Corticoide nasal: seguro no idoso; epistaxe ocasional.",d:"Orientar técnica de aplicação."},
+{i:"fluticasona",n:"Fluticasona (nasal)",c:"Antiasmáticos e broncodilatadores",o:"R",r:"Corticoide nasal: seguro na pessoa idosa; epistaxe ocasional.",d:"Orientar técnica de aplicação."},
 {i:"fenoterol",n:"Fenoterol",c:"Antiasmáticos e broncodilatadores",o:"C",r:"Tremor e taquicardia; cautela em cardiopatas.",d:"Vigilar sintomas cardiovasculares."},
 {i:"tiotropio",n:"Tiotrópio",c:"Antiasmáticos e broncodilatadores",o:"C",r:"Anticolinérgico inalatório de longa ação; baixa absorção sistêmica.",d:"Cautela teórica em glaucoma de ângulo fechado e obstrução urinária."},
 {i:"glicopirronio",n:"Glicopirrônio",c:"Antiasmáticos e broncodilatadores",o:"C"},
 {i:"umeclidinio",n:"Umeclidínio (± vilanterol)",c:"Antiasmáticos e broncodilatadores",o:"C"},
 {i:"amoxicilina",n:"Amoxicilina",c:"Antibacterianos",o:"R",f:"cáps 500 mg · suspensões"},
-{i:"amoxicilina-clavulanato",n:"Amoxicilina + ácido clavulânico",c:"Antibacterianos",o:"R",r:"Diarreia mais frequente; raros casos de hepatotoxicidade colestática no idoso.",d:"Observar tolerância digestiva."},
+{i:"amoxicilina-clavulanato",n:"Amoxicilina + ácido clavulânico",c:"Antibacterianos",o:"R",r:"Diarreia mais frequente; raros casos de hepatotoxicidade colestática na pessoa idosa.",d:"Observar tolerância digestiva."},
 {i:"ampicilina",n:"Ampicilina",c:"Antibacterianos",o:"R"},
 {i:"penicilina-benzatina",n:"Benzilpenicilina benzatina",c:"Antibacterianos",o:"R",r:"Dor local; aplicar por via intramuscular profunda.",d:"Conferir indicação (sífilis, profilaxia de febre reumática)."},
 {i:"penicilina-procaina-potassica",n:"Benzilpenicilina procaína + potássica",c:"Antibacterianos",o:"R"},
 {i:"penicilina-cristalina",n:"Benzilpenicilina potássica (cristalina)",c:"Antibacterianos",o:"R",r:"Altas doses venosas: risco de convulsão, sobretudo com função renal reduzida.",d:"Ajustar dose por função renal em altas doses."},
-{i:"cefalexina",n:"Cefalexina",c:"Antibacterianos",o:"R",r:"Segura no idoso; acumula na doença renal crônica.",d:"Ajustar por TFG em doses plenas."},
+{i:"cefalexina",n:"Cefalexina",c:"Antibacterianos",o:"R",r:"Segura na pessoa idosa; acumula na doença renal crônica.",d:"Ajustar por TFG em doses plenas."},
 {i:"cefalotina",n:"Cefalotina",c:"Antibacterianos",o:"R"},
 {i:"ceftriaxona",n:"Ceftriaxona",c:"Antibacterianos",o:"R",r:"Sem ajuste renal; atenção à litíase biliar.",d:"Não administrar com soluções contendo cálcio."},
 {i:"ciprofloxacino",n:"Ciprofloxacino",c:"Antibacterianos",o:"R",f:"cp 500 mg · inj",b:"ca",t:["fluoroq"],r:"Beers: evitar fluoroquinolonas exceto em infecções graves sem alternativa — tendinite e ruptura tendínea, dissecção de aorta, efeitos no sistema nervoso central, hipoglicemia e QT longo.",d:"Confirmar ausência de alternativa mais segura; atenção a corticoterapia associada e a hipoglicemiantes."},
 {i:"levofloxacino",n:"Levofloxacino",c:"Antibacterianos",o:"R",b:"ca",t:["fluoroq"],r:"Mesma ressalva de Beers para fluoroquinolonas; ajustar por função renal; QT longo.",d:"Reservar a indicações específicas; monitorar glicemia em diabéticos."},
-{i:"norfloxacino",n:"Norfloxacino",c:"Antibacterianos",o:"R",b:"ca",t:["fluoroq"],r:"Fluoroquinolona: ressalva de Beers aplicada; para infecção urinária baixa, preferir alternativa com menor risco no idoso.",d:"Discutir alternativa (ex.: nitrofurantoína com TFG adequada)."},
+{i:"norfloxacino",n:"Norfloxacino",c:"Antibacterianos",o:"R",b:"ca",t:["fluoroq"],r:"Fluoroquinolona: ressalva de Beers aplicada; para infecção urinária baixa, preferir alternativa com menor risco na pessoa idosa.",d:"Discutir alternativa (ex.: nitrofurantoína com TFG adequada)."},
 {i:"azitromicina",n:"Azitromicina",c:"Antibacterianos",o:"R",b:"mo",t:["macro"],r:"Prolongamento do intervalo QT; menor potencial de interação que a claritromicina, ainda assim relevante com antiarrítmicos.",d:"Checar outros fármacos que prolongam o QT (amiodarona, antipsicóticos)."},
 {i:"claritromicina",n:"Claritromicina",c:"Antibacterianos",o:"R",f:"cp 500 mg · suspensão",b:"mo",t:["macro"],r:"Potente inibidor de CYP3A4: eleva estatinas, carbamazepina e digoxina; prolonga o QT.",d:"Rastrear interações antes de iniciar; considerar azitromicina como alternativa."},
 {i:"eritromicina",n:"Eritromicina (estolato)",c:"Antibacterianos",o:"R",b:"mo",t:["macro"],r:"QT longo, intolerância digestiva e inibição enzimática semelhantes às da claritromicina.",d:"Evitar associações de risco; fracionar para melhorar tolerância."},
 {i:"espiramicina",n:"Espiramicina",c:"Antibacterianos",o:"R",b:"mo",t:["macro"],r:"Macrolídeo usado na toxoplasmose da gestante; QT longo em menor grau.",d:"Revisar esquema completo."},
-{i:"clindamicina",n:"Clindamicina",c:"Antibacterianos",o:"R",r:"Risco de diarreia por Clostridioides difficile, maior no idoso.",d:"Menor duração possível; orientar sinais de colite."},
+{i:"clindamicina",n:"Clindamicina",c:"Antibacterianos",o:"R",r:"Risco de diarreia por Clostridioides difficile, maior na pessoa idosa.",d:"Menor duração possível; orientar sinais de colite."},
 {i:"doxiciclina",n:"Doxiciclina",c:"Antibacterianos",o:"R",r:"Fotossensibilidade e esofagite (ingerir com água e em posição ereta); absorção reduzida por cálcio e ferro.",d:"Orientar administração; separar de carbonato de cálcio e sulfato ferroso."},
-{i:"gentamicina",n:"Gentamicina",c:"Antibacterianos",o:"R",b:"mo",t:["aminog"],r:"Nefrotoxicidade e ototoxicidade (frequentemente irreversíveis) amplificadas no idoso.",d:"Monitorar função renal; evitar associar a diurético de alça; menor duração possível."},
-{i:"estreptomicina",n:"Estreptomicina",c:"Antibacterianos",o:"R",b:"mo",t:["aminog"],r:"Aminoglicosídeo: ototoxicidade vestibular e nefrotoxicidade maiores no idoso.",d:"Uso hospitalar na tuberculose; vigilância auditiva."},
-{i:"metronidazol",n:"Metronidazol",c:"Antibacterianos",o:"R",r:"Neuropatia periférica em usos prolongados; potencializa a varfarina.",d:"Ciclos curtos; atenção se o paciente usa varfarina."},
+{i:"gentamicina",n:"Gentamicina",c:"Antibacterianos",o:"R",b:"mo",t:["aminog"],r:"Nefrotoxicidade e ototoxicidade (frequentemente irreversíveis) amplificadas na pessoa idosa.",d:"Monitorar função renal; evitar associar a diurético de alça; menor duração possível."},
+{i:"estreptomicina",n:"Estreptomicina",c:"Antibacterianos",o:"R",b:"mo",t:["aminog"],r:"Aminoglicosídeo: ototoxicidade vestibular e nefrotoxicidade maiores na pessoa idosa.",d:"Uso hospitalar na tuberculose; vigilância auditiva."},
+{i:"metronidazol",n:"Metronidazol",c:"Antibacterianos",o:"R",r:"Neuropatia periférica em usos prolongados; potencializa a varfarina.",d:"Ciclos curtos; atenção se a pessoa usa varfarina."},
 {i:"benzilmetronidazol",n:"Benzoilmetronidazol",c:"Antibacterianos",o:"R",r:"Pró-fármaco do metronidazol: mesmas precauções.",d:"Ciclos curtos."},
 {i:"nitrofurantoina",n:"Nitrofurantoína",c:"Antibacterianos",o:"R",f:"cáps 100 mg",b:"ca",r:"Beers: evitar se depuração de creatinina menor que 30 mL/min (ineficaz e tóxica) e evitar supressão crônica (toxicidade pulmonar e hepática).",d:"Checar a função renal antes de prescrever; limitar ao tratamento de infecção urinária baixa, não à profilaxia prolongada."},
 {i:"sulfametoxazol-trimetoprima",n:"Sulfametoxazol + trimetoprima",c:"Antibacterianos",o:"R",b:"mo",t:["tmpsmx"],r:"Hipercalemia (a trimetoprima age como poupador de potássio), hiponatremia e elevação de creatinina — risco maior com iECA, BRA, espironolactona e doença renal crônica.",d:"Monitorar potássio e creatinina; revisar associações; ajustar por função renal."},
@@ -534,93 +545,93 @@ const D=[
 {i:"rifapentina",n:"Rifapentina",c:"Antibacterianos",o:"R",b:"mo",r:"Indutor enzimático como a rifampicina.",d:"Mesmas precauções da rifampicina."},
 {i:"rifabutina",n:"Rifabutina",c:"Antibacterianos",o:"R",b:"mo",r:"Indutor enzimático (menor que a rifampicina); uveíte em doses altas.",d:"Revisar interações com antirretrovirais."},
 {i:"pirazinamida",n:"Pirazinamida",c:"Antibacterianos",o:"R",b:"mo",r:"Hepatotoxicidade e hiperuricemia.",d:"Monitorar função hepática e sintomas articulares."},
-{i:"etambutol",n:"Etambutol",c:"Antibacterianos",o:"R",b:"mo",r:"Neurite óptica dose-dependente; o idoso percebe a piora visual mais tarde.",d:"Avaliar acuidade visual antes e durante o tratamento; ajustar por função renal."},
-{i:"dapsona",n:"Dapsona",c:"Antibacterianos",o:"R",b:"mo",r:"Metahemoglobinemia e hemólise, mais graves no idoso e na anemia.",d:"Hemograma periódico; investigar dispneia ou cianose."},
+{i:"etambutol",n:"Etambutol",c:"Antibacterianos",o:"R",b:"mo",r:"Neurite óptica dose-dependente; a pessoa idosa percebe a piora visual mais tarde.",d:"Avaliar acuidade visual antes e durante o tratamento; ajustar por função renal."},
+{i:"dapsona",n:"Dapsona",c:"Antibacterianos",o:"R",b:"mo",r:"Metahemoglobinemia e hemólise, mais graves na pessoa idosa e na anemia.",d:"Hemograma periódico; investigar dispneia ou cianose."},
 {i:"pqt",n:"Poliquimioterapia única (hanseníase)",c:"Antibacterianos",o:"R",r:"Esquema rifampicina + dapsona + clofazimina: aplicam-se as precauções de cada fármaco.",d:"Vigiar função hepática, hemograma e pigmentação cutânea."},
 {i:"fluconazol",n:"Fluconazol",c:"Antifúngicos",o:"R",f:"cáps 150 mg",b:"mo",r:"QT longo e inibição enzimática: eleva varfarina, fenitoína, sulfonilureias e estatinas.",d:"Revisar o esquema completo antes de iniciar; monitorar RNI se varfarina."},
 {i:"itraconazol",n:"Itraconazol",c:"Antifúngicos",o:"R",f:"cáps 100 mg (sob regulação)",b:"ca",r:"Inibidor potente de CYP3A4; efeito inotrópico negativo — evitar em insuficiência cardíaca; QT longo.",d:"Contraindicado com sinvastatina; evitar em cardiopatas; revisar interações."},
 {i:"nistatina",n:"Nistatina",c:"Antifúngicos",o:"R",r:"Uso tópico ou oral local, sem risco sistêmico relevante.",d:"Tratar fatores predisponentes (próteses, corticoide inalatório)."},
 {i:"miconazol",n:"Miconazol",c:"Antifúngicos",o:"R"},
 {i:"cetoconazol-topico",n:"Cetoconazol (xampu)",c:"Antifúngicos",o:"R",r:"Uso tópico sem risco sistêmico.",d:"Manter via tópica."},
-{i:"anfotericina-b",n:"Anfotericina B (todas as formas)",c:"Antifúngicos",o:"R",b:"mo",r:"Nefrotoxicidade e distúrbios eletrolíticos (hipocalemia, hipomagnesemia) maiores no idoso.",d:"Hidratação e eletrólitos seriados; dispensação regulada."},
-{i:"varfarina",n:"Varfarina sódica",c:"Anticoagulantes e antagonistas",o:"R",f:"cp 5 mg",b:"mo",t:["anticoag"],r:"Janela terapêutica estreita e sangramento maior no idoso; múltiplas interações; quedas aumentam a gravidade do sangramento.",d:"RNI frequente em qualquer mudança de esquema; revisar dieta e interações; plano de prevenção de quedas."},
+{i:"anfotericina-b",n:"Anfotericina B (todas as formas)",c:"Antifúngicos",o:"R",b:"mo",r:"Nefrotoxicidade e distúrbios eletrolíticos (hipocalemia, hipomagnesemia) maiores na pessoa idosa.",d:"Hidratação e eletrólitos seriados; dispensação regulada."},
+{i:"varfarina",n:"Varfarina sódica",c:"Anticoagulantes e antagonistas",o:"R",f:"cp 5 mg",b:"mo",t:["anticoag"],r:"Janela terapêutica estreita e sangramento maior na pessoa idosa; múltiplas interações; quedas aumentam a gravidade do sangramento.",d:"RNI frequente em qualquer mudança de esquema; revisar dieta e interações; plano de prevenção de quedas."},
 {i:"enoxaparina",n:"Enoxaparina",c:"Anticoagulantes e antagonistas",o:"RC",b:"mo",t:["anticoag"],r:"Acumula na doença renal crônica (ajustar ou evitar se depuração menor que 30 mL/min); sangramento.",d:"Checar a função renal antes de cada ciclo; monitorar plaquetas."},
-{i:"heparina",n:"Heparina sódica",c:"Anticoagulantes e antagonistas",o:"R",b:"mo",t:["anticoag"],r:"Sangramento e trombocitopenia induzida por heparina.",d:"Monitorar plaquetas; dose profilática no idoso."},
+{i:"heparina",n:"Heparina sódica",c:"Anticoagulantes e antagonistas",o:"R",b:"mo",t:["anticoag"],r:"Sangramento e trombocitopenia induzida por heparina.",d:"Monitorar plaquetas; dose profilática na pessoa idosa."},
 {i:"fitomenadiona",n:"Fitomenadiona (vitamina K)",c:"Anticoagulantes e antagonistas",o:"R",r:"Antagoniza a varfarina; usada para reverter anticoagulação.",d:"Reavaliar dose da varfarina após o uso."},
 {i:"acido-tranexamico",n:"Ácido tranexâmico",c:"Anti-hemorrágicos",o:"R",r:"Uso exclusivo do SAMU.",d:"Uso exclusivo do SAMU."},
-{i:"atropina",n:"Atropina (injetável)",c:"Anticolinérgicos",o:"R",r:"Uso agudo em bradicardia; efeitos anticolinérgicos sistêmicos (retenção urinária, delirium) no idoso.",d:"Uso pontual em urgência; observar retenção urinária e confusão."},
-{i:"carbamazepina",n:"Carbamazepina",c:"Anticonvulsivantes",o:"R",f:"cp 200 mg · suspensão",b:"mo",r:"Hiponatremia (SIADH) mais frequente no idoso; ataxia, tontura e quedas; potente indutor enzimático (múltiplas interações).",d:"Dosar sódio periodicamente; rastrear interações (macrolídeos, varfarina, metadona); considerar alternativas."},
-{i:"fenitoina",n:"Fenitoína",c:"Anticonvulsivantes",o:"R",b:"mo",r:"Ataxia, confusão e hipotensão; cinética não linear e alta ligação à albumina (alterada no idoso).",d:"Ajustar por albumina e função hepática; sinais precoces de toxicidade; interações com fluconazol e cálcio."},
-{i:"fenobarbital",n:"Fenobarbital",c:"Anticonvulsivantes",o:"R",b:"ev",t:["sed"],r:"Barbitúrico de longa duração: sedação prolongada, prejuízo cognitivo e dependência. Beers: evitar no idoso.",d:"Descontinuar gradualmente (nunca de forma abrupta) e substituir por anticonvulsivante mais seguro."},
+{i:"atropina",n:"Atropina (injetável)",c:"Anticolinérgicos",o:"R",r:"Uso agudo em bradicardia; efeitos anticolinérgicos sistêmicos (retenção urinária, delirium) na pessoa idosa.",d:"Uso pontual em urgência; observar retenção urinária e confusão."},
+{i:"carbamazepina",n:"Carbamazepina",c:"Anticonvulsivantes",o:"R",f:"cp 200 mg · suspensão",b:"mo",r:"Hiponatremia (SIADH) mais frequente na pessoa idosa; ataxia, tontura e quedas; potente indutor enzimático (múltiplas interações).",d:"Dosar sódio periodicamente; rastrear interações (macrolídeos, varfarina, metadona); considerar alternativas."},
+{i:"fenitoina",n:"Fenitoína",c:"Anticonvulsivantes",o:"R",b:"mo",r:"Ataxia, confusão e hipotensão; cinética não linear e alta ligação à albumina (alterada na pessoa idosa).",d:"Ajustar por albumina e função hepática; sinais precoces de toxicidade; interações com fluconazol e cálcio."},
+{i:"fenobarbital",n:"Fenobarbital",c:"Anticonvulsivantes",o:"R",b:"ev",t:["sed"],r:"Barbitúrico de longa duração: sedação prolongada, prejuízo cognitivo e dependência. Beers: evitar na pessoa idosa.",d:"Descontinuar gradualmente (nunca de forma abrupta) e substituir por anticonvulsivante mais seguro."},
 {i:"primidona",n:"Primidona",c:"Anticonvulsivantes",o:"C",b:"ev",t:["sed"],r:"Metabolizada em fenobarbital: mesmos riscos de sedação prolongada e prejuízo cognitivo (Beers: evitar barbitúricos).",d:"Discutir substituição; retirada apenas gradual."},
 {i:"oxcarbazepina",n:"Oxcarbazepina",c:"Anticonvulsivantes",o:"R",f:"cp 300/600 mg · suspensão (sob regulação)",b:"mo",r:"Hiponatremia ainda mais frequente que com carbamazepina; tontura e quedas.",d:"Dosar sódio no início e após ajustes; titular lentamente."},
 {i:"valproato",n:"Valproato de sódio",c:"Anticonvulsivantes",o:"R",b:"mo",r:"Tremor, parkinsonismo, hiperamonemia e trombocitopenia; contribui para quedas.",d:"Menor dose eficaz; monitorar plaquetas e sinais neurológicos; interação importante com lamotrigina."},
-{i:"clonazepam",n:"Clonazepam",c:"Anticonvulsivantes",o:"R",f:"cp 2 mg · sol oral",b:"ev",t:["benzo","sed"],r:"Benzodiazepínico de ação longa: quedas, fraturas, dependência e declínio cognitivo (Beers: evitar no idoso).",d:"Plano de retirada gradual com o prescritor; nunca suspender abruptamente."},
-{i:"clobazam",n:"Clobazam",c:"Anticonvulsivantes",o:"RC",b:"ca",t:["benzo","sed"],r:"Benzodiazepínico: embora menos sedativo, compartilha os riscos da classe no idoso (quedas, dependência).",d:"Menor dose e menor duração; plano de retirada; atenção ao efeito somatório com outros depressores."},
+{i:"clonazepam",n:"Clonazepam",c:"Anticonvulsivantes",o:"R",f:"cp 2 mg · sol oral",b:"ev",t:["benzo","sed"],r:"Benzodiazepínico de ação longa: quedas, fraturas, dependência e declínio cognitivo (Beers: evitar na pessoa idosa).",d:"Plano de retirada gradual com o prescritor; nunca suspender abruptamente."},
+{i:"clobazam",n:"Clobazam",c:"Anticonvulsivantes",o:"RC",b:"ca",t:["benzo","sed"],r:"Benzodiazepínico: embora menos sedativo, compartilha os riscos da classe na pessoa idosa (quedas, dependência).",d:"Menor dose e menor duração; plano de retirada; atenção ao efeito somatório com outros depressores."},
 {i:"gabapentina",n:"Gabapentina",c:"Anticonvulsivantes",o:"C",f:"cáps 300/400 mg",b:"ca",t:["gaba","sed"],r:"Tontura, sedação, edema e quedas; acumula na doença renal crônica. Beers: cautela com três ou mais depressores do SNC ou história de quedas.",d:"Ajustar por TFG; não somar a outros sedativos; risco respiratório com opioides."},
 {i:"lamotrigina",n:"Lamotrigina",c:"Anticonvulsivantes",o:"C",b:"mo",r:"Titulação lenta obrigatória; risco de síndrome de Stevens-Johnson, maior com valproato associado.",d:"Iniciar com dose muito baixa e titular devagar; orientar sinais de rash."},
-{i:"topiramato",n:"Topiramato",c:"Anticonvulsivantes",o:"C",b:"mo",r:"Lentificação cognitiva, parestesias, perda ponderal e acidose metabólica no idoso.",d:"Titular lentamente; vigiar cognição e bicarbonato."},
+{i:"topiramato",n:"Topiramato",c:"Anticonvulsivantes",o:"C",b:"mo",r:"Lentificação cognitiva, parestesias, perda ponderal e acidose metabólica na pessoa idosa.",d:"Titular lentamente; vigiar cognição e bicarbonato."},
 {i:"levetiracetam",n:"Levetiracetam",c:"Anticonvulsivantes",o:"C",b:"mo",r:"Irritabilidade e alterações de humor; ajustar por função renal.",d:"Ajustar por TFG; observar humor e sono."},
 {i:"etossuximida",n:"Etossuximida",c:"Anticonvulsivantes",o:"C",r:"Uso em epilepsia de ausência; sem restrição geriátrica específica em Beers.",d:"Vigiar sintomas digestivos."},
 {i:"vigabatrina",n:"Vigabatrina",c:"Anticonvulsivantes",o:"C",b:"mo",r:"Defeitos de campo visual potencialmente irreversíveis.",d:"Avaliação oftalmológica periódica."},
-{i:"amitriptilina",n:"Amitriptilina",c:"Antidepressivos e estabilizadores do humor",o:"R",f:"cp 25 mg",b:"ev",t:["atc","anticol","sed"],ach:3,r:"Tricíclico altamente anticolinérgico (Beers: evitar): confusão, retenção urinária, constipação, boca seca, hipotensão ortostática e quedas.",d:"Substituir por antidepressivo com melhor perfil no idoso; para dor neuropática, discutir alternativas."},
-{i:"clomipramina",n:"Clomipramina",c:"Antidepressivos e estabilizadores do humor",o:"R",b:"ev",t:["atc","anticol","sed"],ach:3,r:"Tricíclico com carga anticolinérgica muito alta (Beers: evitar no idoso).",d:"Discutir substituição; risco de quedas, delirium e arritmias."},
-{i:"imipramina",n:"Imipramina",c:"Antidepressivos e estabilizadores do humor",o:"R",b:"ev",t:["atc","anticol","sed"],ach:3,r:"Tricíclico (Beers: evitar no idoso): hipotensão ortostática, sedação e efeitos anticolinérgicos.",d:"Discutir substituição por classe mais segura."},
-{i:"nortriptilina",n:"Nortriptilina",c:"Antidepressivos e estabilizadores do humor",o:"R",f:"cáps 25/50 mg",b:"ev",t:["atc","anticol","sed"],ach:2,r:"Tricíclico: embora menos anticolinérgica, permanece evitada no idoso (Beers) — hipotensão ortostática e arritmias.",d:"Se antidepressivo necessário, discutir alternativa com melhor perfil geriátrico."},
-{i:"fluoxetina",n:"Fluoxetina",c:"Antidepressivos e estabilizadores do humor",o:"R",f:"cáps 20 mg",b:"ca",t:["ssri"],r:"Meia-vida muito longa (acúmulo no idoso); hiponatremia, insônia e agitação; potencializa sangramento digestivo com AINEs. Beers: monitorar sódio.",d:"Dosar sódio no início e após ajustes; rastrear interações (tramadol, metoprolol); vigiar sangramento com AAS ou AINEs."},
+{i:"amitriptilina",n:"Amitriptilina",c:"Antidepressivos e estabilizadores do humor",o:"R",f:"cp 25 mg",b:"ev",t:["atc","anticol","sed"],ach:3,r:"Tricíclico altamente anticolinérgico (Beers: evitar): confusão, retenção urinária, constipação, boca seca, hipotensão ortostática e quedas.",d:"Substituir por antidepressivo com melhor perfil na pessoa idosa; para dor neuropática, discutir alternativas."},
+{i:"clomipramina",n:"Clomipramina",c:"Antidepressivos e estabilizadores do humor",o:"R",b:"ev",t:["atc","anticol","sed"],ach:3,r:"Tricíclico com carga anticolinérgica muito alta (Beers: evitar na pessoa idosa).",d:"Discutir substituição; risco de quedas, delirium e arritmias."},
+{i:"imipramina",n:"Imipramina",c:"Antidepressivos e estabilizadores do humor",o:"R",b:"ev",t:["atc","anticol","sed"],ach:3,r:"Tricíclico (Beers: evitar na pessoa idosa): hipotensão ortostática, sedação e efeitos anticolinérgicos.",d:"Discutir substituição por classe mais segura."},
+{i:"nortriptilina",n:"Nortriptilina",c:"Antidepressivos e estabilizadores do humor",o:"R",f:"cáps 25/50 mg",b:"ev",t:["atc","anticol","sed"],ach:2,r:"Tricíclico: embora menos anticolinérgica, permanece evitada na pessoa idosa (Beers) — hipotensão ortostática e arritmias.",d:"Se antidepressivo necessário, discutir alternativa com melhor perfil geriátrico."},
+{i:"fluoxetina",n:"Fluoxetina",c:"Antidepressivos e estabilizadores do humor",o:"R",f:"cáps 20 mg",b:"ca",t:["ssri"],r:"Meia-vida muito longa (acúmulo na pessoa idosa); hiponatremia, insônia e agitação; potencializa sangramento digestivo com AINEs. Beers: monitorar sódio.",d:"Dosar sódio no início e após ajustes; rastrear interações (tramadol, metoprolol); vigiar sangramento com AAS ou AINEs."},
 {i:"litio",n:"Lítio, carbonato",c:"Antidepressivos e estabilizadores do humor",o:"R",f:"cp 300 mg",b:"mo",t:["litio"],r:"Janela terapêutica estreita; desidratação, doença renal, diuréticos, iECA e AINEs precipitam toxicidade (tremor grosso, confusão, ataxia).",d:"Litemia periódica; função renal e tireoidiana; educar sobre sinais de toxicidade e hidratação."},
 {i:"bupropiona",n:"Bupropiona",c:"Antidepressivos e estabilizadores do humor",o:"R",f:"cp 150 mg LP (programa de tabagismo)",r:"Insônia e boca seca; reduz o limiar convulsivo em doses altas.",d:"Tomar pela manhã; evitar em epilepsia."},
 {i:"flumazenil",n:"Flumazenil",c:"Antídotos",o:"R"},
 {i:"naloxona",n:"Naloxona",c:"Antídotos",o:"R"},
 {i:"naltrexona",n:"Naltrexona",c:"Antídotos",o:"R",r:"Uso no CERSAM-AD; hepatotoxicidade em doses altas.",d:"Verificar função hepática."},
 {i:"domperidona",n:"Domperidona",c:"Antieméticos e procinéticos",o:"R",f:"suspensão 1 mg/mL",b:"ca",r:"Não listada em Beers (indisponível nos Estados Unidos), porém precaução geriátrica: prolongamento do QT e sintomas extrapiramidais.",d:"Evitar em cardiopatas com QT longo; reavaliar uso crônico; menor dose eficaz."},
-{i:"metoclopramida",n:"Metoclopramida",c:"Antieméticos e procinéticos",o:"R",f:"cp 10 mg · inj",b:"ev",r:"Beers: evitar no idoso, exceto gastroparesia confirmada — sintomas extrapiramidais, discinesia tardia e sedação.",d:"Limitar a curto prazo (até 12 semanas) e à menor dose; antagoniza a levodopa; discutir antiemético alternativo."},
-{i:"ondansetrona",n:"Ondansetrona",c:"Antieméticos e procinéticos",o:"R",b:"mo",r:"Constipação importante no idoso; prolonga o QT (especialmente venoso rápido).",d:"Infusão lenta; checar outros fármacos que prolongam o QT."},
-{i:"escopolamina",n:"Escopolamina, butilbrometo (± dipirona)",c:"Antiespasmódicos",o:"R",f:"cp 10 mg · inj",b:"ev",t:["anticol"],ach:2,r:"Antiespasmódico anticolinérgico: Beers evita essa classe no idoso — confusão, retenção urinária, boca seca, constipação e taquicardia.",d:"Investigar a causa da cólica; preferir analgesia sem carga anticolinérgica."},
-{i:"oxibutinina",n:"Oxibutinina",c:"Antiespasmódicos urinários",o:"R",f:"cp 5 mg · xarope",b:"ev",t:["anticol"],ach:3,r:"Beers: evitar oxibutinina no idoso — alta carga anticolinérgica (confusão, constipação, retenção urinária, boca seca).",d:"Discutir alternativas comportamentais para bexiga hiperativa; descalonar se em uso crônico."},
+{i:"metoclopramida",n:"Metoclopramida",c:"Antieméticos e procinéticos",o:"R",f:"cp 10 mg · inj",b:"ev",r:"Beers: evitar na pessoa idosa, exceto gastroparesia confirmada — sintomas extrapiramidais, discinesia tardia e sedação.",d:"Limitar a curto prazo (até 12 semanas) e à menor dose; antagoniza a levodopa; discutir antiemético alternativo."},
+{i:"ondansetrona",n:"Ondansetrona",c:"Antieméticos e procinéticos",o:"R",b:"mo",r:"Constipação importante na pessoa idosa; prolonga o QT (especialmente venoso rápido).",d:"Infusão lenta; checar outros fármacos que prolongam o QT."},
+{i:"escopolamina",n:"Escopolamina, butilbrometo (± dipirona)",c:"Antiespasmódicos",o:"R",f:"cp 10 mg · inj",b:"ev",t:["anticol"],ach:2,r:"Antiespasmódico anticolinérgico: Beers evita essa classe na pessoa idosa — confusão, retenção urinária, boca seca, constipação e taquicardia.",d:"Investigar a causa da cólica; preferir analgesia sem carga anticolinérgica."},
+{i:"oxibutinina",n:"Oxibutinina",c:"Antiespasmódicos urinários",o:"R",f:"cp 5 mg · xarope",b:"ev",t:["anticol"],ach:3,r:"Beers: evitar oxibutinina na pessoa idosa — alta carga anticolinérgica (confusão, constipação, retenção urinária, boca seca).",d:"Discutir alternativas comportamentais para bexiga hiperativa; descalonar se em uso crônico."},
 {i:"simeticona",n:"Simeticona",c:"Antiflatulentos",o:"R"},
-{i:"anlodipino",n:"Anlodipino",c:"Anti-hipertensivos e diuréticos",o:"R",f:"cp 5 mg",t:["dhp"],r:"Geralmente bem tolerado no idoso; edema maleolar e hipotensão em pacientes de baixa reserva.",d:"Boa opção geriátrica; atenção à interação com claritromicina e à redução de efeito com rifampicina."},
+{i:"anlodipino",n:"Anlodipino",c:"Anti-hipertensivos e diuréticos",o:"R",f:"cp 5 mg",t:["dhp"],r:"Geralmente bem tolerado na pessoa idosa; edema maleolar e hipotensão em pessoas de baixa reserva.",d:"Boa opção geriátrica; atenção à interação com claritromicina e à redução de efeito com rifampicina."},
 {i:"atenolol",n:"Atenolol",c:"Anti-hipertensivos e diuréticos",o:"R",f:"cp 50 mg",b:"mo",t:["betabloq"],r:"Bradicardia, fadiga e hipotensão; acumula na doença renal crônica; mascara hipoglicemia.",d:"Não associar a verapamil; avaliar frequência-alvo; ajuste renal."},
 {i:"propranolol",n:"Propranolol",c:"Anti-hipertensivos e diuréticos",o:"R",f:"cp 40 mg",b:"mo",t:["betabloq"],r:"Não seletivo: broncoespasmo, mascaramento de hipoglicemia e antagonismo com broncodilatadores; evitar em DPOC ou asma.",d:"Discutir betabloqueador cardioseletivo se indicação cardiovascular."},
-{i:"carvedilol",n:"Carvedilol",c:"Anti-hipertensivos e diuréticos",o:"R",f:"cp 3,125 a 25 mg · sol oral",b:"mo",t:["betabloq"],r:"Componente alfa aumenta a hipotensão ortostática (quedas); bradicardia.",d:"Iniciar e titular lentamente; orientar o idoso a levantar devagar."},
+{i:"carvedilol",n:"Carvedilol",c:"Anti-hipertensivos e diuréticos",o:"R",f:"cp 3,125 a 25 mg · sol oral",b:"mo",t:["betabloq"],r:"Componente alfa aumenta a hipotensão ortostática (quedas); bradicardia.",d:"Iniciar e titular lentamente; orientar a pessoa idosa a levantar devagar."},
 {i:"captopril",n:"Captopril",c:"Anti-hipertensivos e diuréticos",o:"R",f:"cp 25 mg · sol oral",b:"mo",t:["ieca"],r:"Hipotensão de primeira dose, hipercalemia e piora da função renal; tosse seca.",d:"Não associar a BRA, espironolactona em dose alta ou AINE crônico; monitorar potássio e creatinina."},
 {i:"enalapril",n:"Enalapril",c:"Anti-hipertensivos e diuréticos",o:"R",f:"cp 5/20 mg",b:"mo",t:["ieca"],r:"Como os iECA: hipercalemia, lesão renal com AINEs ou desidratação, hipotensão.",d:"Revisar associações de risco; creatinina e potássio após início ou ajuste."},
 {i:"losartana",n:"Losartana potássica",c:"Anti-hipertensivos e diuréticos",o:"R",f:"cp 25/50 mg",b:"mo",t:["bra"],r:"Hipercalemia e lesão renal (sobretudo com AINEs e diuréticos); evitar associação com iECA.",d:"Mesma vigilância dos iECA; evitar duplo bloqueio do sistema renina-angiotensina."},
-{i:"clonidina",n:"Clonidina",c:"Anti-hipertensivos e diuréticos",o:"R",f:"cp 0,1 mg (urgência)",b:"ev",r:"Beers 2023: evitar agonista alfa-2 central como anti-hipertensivo de rotina no idoso — bradicardia, hipotensão ortostática e hipertensão rebote na retirada.",d:"Preferir alternativas; se em uso crônico, descalonar lentamente; cuidado com betabloqueador associado."},
-{i:"metildopa",n:"Metildopa",c:"Anti-hipertensivos e diuréticos",o:"R",f:"cp 250/500 mg",b:"ev",r:"Ação central (Beers: evitar): sedação, depressão, bradicardia, hipotensão ortostática e disfunção sexual.",d:"Substituir por classe mais segura no idoso; retirada gradual."},
-{i:"doxazosina",n:"Doxazosina",c:"Anti-hipertensivos e diuréticos",o:"R",f:"cp 2 mg",b:"ev",t:["alfabloq"],r:"Beers: evitar alfa-1 bloqueador como anti-hipertensivo no idoso — hipotensão ortostática, quedas e incontinência por transbordamento.",d:"Para hiperplasia prostática discutir alternativas; se mantido, iniciar à noite com dose mínima."},
+{i:"clonidina",n:"Clonidina",c:"Anti-hipertensivos e diuréticos",o:"R",f:"cp 0,1 mg (urgência)",b:"ev",r:"Beers 2023: evitar agonista alfa-2 central como anti-hipertensivo de rotina na pessoa idosa — bradicardia, hipotensão ortostática e hipertensão rebote na retirada.",d:"Preferir alternativas; se em uso crônico, descalonar lentamente; cuidado com betabloqueador associado."},
+{i:"metildopa",n:"Metildopa",c:"Anti-hipertensivos e diuréticos",o:"R",f:"cp 250/500 mg",b:"ev",r:"Ação central (Beers: evitar): sedação, depressão, bradicardia, hipotensão ortostática e disfunção sexual.",d:"Substituir por classe mais segura na pessoa idosa; retirada gradual."},
+{i:"doxazosina",n:"Doxazosina",c:"Anti-hipertensivos e diuréticos",o:"R",f:"cp 2 mg",b:"ev",t:["alfabloq"],r:"Beers: evitar alfa-1 bloqueador como anti-hipertensivo na pessoa idosa — hipotensão ortostática, quedas e incontinência por transbordamento.",d:"Para hiperplasia prostática discutir alternativas; se mantido, iniciar à noite com dose mínima."},
 {i:"hidralazina",n:"Hidralazina",c:"Anti-hipertensivos e diuréticos",o:"R",f:"drágea 25 mg",b:"mo",r:"Taquicardia reflexa, cefaleia e hipotensão imprevisível; evitar em coronariopatia.",d:"Uso como terceira ou quarta linha; avaliar associação com betabloqueador."},
-{i:"hidroclorotiazida",n:"Hidroclorotiazida",c:"Anti-hipertensivos e diuréticos",o:"R",f:"cp 25 mg",b:"mo",t:["diuret","tz"],r:"Beers: risco de hiponatremia no idoso — monitorar sódio; também hipocalemia, gota e fotossensibilidade.",d:"Dosar sódio e potássio no início e após ajustes; atenção a câimbras e confusão."},
+{i:"hidroclorotiazida",n:"Hidroclorotiazida",c:"Anti-hipertensivos e diuréticos",o:"R",f:"cp 25 mg",b:"mo",t:["diuret","tz"],r:"Beers: risco de hiponatremia na pessoa idosa — monitorar sódio; também hipocalemia, gota e fotossensibilidade.",d:"Dosar sódio e potássio no início e após ajustes; atenção a câimbras e confusão."},
 {i:"furosemida",n:"Furosemida",c:"Anti-hipertensivos e diuréticos",o:"R",f:"cp 40 mg · inj · sol oral",b:"mo",t:["diuret","alca"],r:"Desidratação, hipocalemia e hiponatremia; urgência urinária contribui para quedas; ototoxicidade com aminoglicosídeos.",d:"Avaliar indicação real; eletrólitos; orientar horário da dose."},
 {i:"espironolactona",n:"Espironolactona",c:"Anti-hipertensivos e diuréticos",o:"R",f:"cp 25/100 mg · suspensão",b:"mo",t:["diuret"],r:"Hipercalemia — maior com iECA, BRA e doença renal crônica (Beers: cautela acima de 25 mg/dia com TFG menor que 30).",d:"Monitorar potássio e TFG; evitar associar a cloreto de potássio."},
 {i:"manitol",n:"Manitol",c:"Anti-hipertensivos e diuréticos",o:"R",r:"Diurético osmótico de urgência: distúrbios hidroeletrolíticos.",d:"Uso hospitalar com monitorização."},
 {i:"prednisona",n:"Prednisona",c:"Anti-inflamatórios esteroides",o:"R",f:"cp 5/20 mg",b:"ca",t:["corticoide"],r:"Uso prolongado: osteoporose e fraturas, hiperglicemia, delirium, miopatia, hipertensão e úlcera digestiva (pior com AINE).",d:"Menor dose e menor tempo; proteção óssea e gástrica quando crônico; retirada gradual."},
-{i:"prednisolona",n:"Prednisolona",c:"Anti-inflamatórios esteroides",o:"R",f:"sol oral",b:"ca",t:["corticoide"],r:"Como a prednisona: risco cumulativo ósseo, metabólico e psiquiátrico no idoso.",d:"Reavaliar duração; descalonar sempre que possível."},
+{i:"prednisolona",n:"Prednisolona",c:"Anti-inflamatórios esteroides",o:"R",f:"sol oral",b:"ca",t:["corticoide"],r:"Como a prednisona: risco cumulativo ósseo, metabólico e psiquiátrico na pessoa idosa.",d:"Reavaliar duração; descalonar sempre que possível."},
 {i:"dexametasona",n:"Dexametasona",c:"Anti-inflamatórios esteroides",o:"R",f:"creme 1 mg/g · inj 4 mg/mL",b:"ca",t:["corticoide"],r:"Potência alta e meia-vida longa: maior risco de delirium, hiperglicemia e supressão adrenal no uso sistêmico; uso tópico é seguro.",d:"Preferir ciclos curtos na via sistêmica; atenção a interações com rifampicina."},
 {i:"hidrocortisona",n:"Hidrocortisona (succinato)",c:"Anti-inflamatórios esteroides",o:"R",b:"ca",t:["corticoide"],r:"Risco da classe no uso sistêmico; retenção hídrica mais pronunciada.",d:"Uso agudo conforme protocolo; vigiar glicemia e pressão arterial."},
 {i:"betametasona-inj",n:"Betametasona (injetável)",c:"Anti-inflamatórios esteroides",o:"R",b:"ca",t:["corticoide"],r:"Corticoide sistêmico de depósito: riscos metabólicos e ósseos cumulativos.",d:"Evitar repetição de ciclos; registrar doses acumuladas."},
 {i:"triancinolona",n:"Triancinolona hexacetonida",c:"Anti-inflamatórios esteroides",o:"R",r:"Infiltração intra-articular: efeito sistêmico baixo; picos glicêmicos transitórios.",d:"Limitar número de infiltrações por ano."},
-{i:"fludrocortisona",n:"Fludrocortisona",c:"Anti-inflamatórios esteroides",o:"C",b:"mo",r:"Mineralocorticoide: edema, hipertensão e hipocalemia no idoso.",d:"Vigiar pressão arterial e potássio."},
+{i:"fludrocortisona",n:"Fludrocortisona",c:"Anti-inflamatórios esteroides",o:"C",b:"mo",r:"Mineralocorticoide: edema, hipertensão e hipocalemia na pessoa idosa.",d:"Vigiar pressão arterial e potássio."},
 {i:"ibuprofeno",n:"Ibuprofeno",c:"Anti-inflamatórios não esteroidais",o:"R",f:"cp 600 mg · suspensão gotas",b:"ev",t:["aine"],r:"Beers: evitar uso crônico — úlcera e sangramento digestivo, lesão renal, retenção hídrica e descompensação de insuficiência cardíaca e hipertensão; risco cresce com a idade.",d:"Evitar uso contínuo; preferir paracetamol ou dipirona. Se inevitável: menor dose, menor tempo e gastroproteção."},
-{i:"tenoxicam",n:"Tenoxicam (injetável)",c:"Anti-inflamatórios não esteroidais",o:"R",b:"ev",t:["aine"],r:"AINE de meia-vida longa: acúmulo no idoso; riscos digestivos e renais da classe (Beers: evitar uso crônico).",d:"Preferir esquemas não farmacológicos e analgésicos mais seguros para dor crônica."},
-{i:"naproxeno",n:"Naproxeno",c:"Anti-inflamatórios não esteroidais",o:"C",f:"cp 250/500 mg",b:"ev",t:["aine"],r:"AINE (Beers: evitar uso crônico no idoso): sangramento digestivo, lesão renal e retenção hídrica; perfil cardiovascular relativamente melhor, sem eliminar o risco.",d:"Reavaliar indicação crônica; alternativas não sistêmicas; proteger TFG e mucosa gástrica."},
+{i:"tenoxicam",n:"Tenoxicam (injetável)",c:"Anti-inflamatórios não esteroidais",o:"R",b:"ev",t:["aine"],r:"AINE de meia-vida longa: acúmulo na pessoa idosa; riscos digestivos e renais da classe (Beers: evitar uso crônico).",d:"Preferir esquemas não farmacológicos e analgésicos mais seguros para dor crônica."},
+{i:"naproxeno",n:"Naproxeno",c:"Anti-inflamatórios não esteroidais",o:"C",f:"cp 250/500 mg",b:"ev",t:["aine"],r:"AINE (Beers: evitar uso crônico na pessoa idosa): sangramento digestivo, lesão renal e retenção hídrica; perfil cardiovascular relativamente melhor, sem eliminar o risco.",d:"Reavaliar indicação crônica; alternativas não sistêmicas; proteger TFG e mucosa gástrica."},
 {i:"albendazol",n:"Albendazol",c:"Antiparasitários",o:"R"},
 {i:"ivermectina",n:"Ivermectina",c:"Antiparasitários",o:"R"},
-{i:"benznidazol",n:"Benznidazol",c:"Antiparasitários",o:"R",b:"ca",r:"Polineuropatia periférica mais frequente em idosos; intolerância digestiva e rash.",d:"Avaliar risco-benefício na doença de Chagas crônica do idoso; vigilância neurológica."},
-{i:"cloroquina",n:"Cloroquina",c:"Antiparasitários",o:"RC",b:"mo",r:"Retinopatia dose-dependente, QT longo e hipoglicemia; acumula no idoso.",d:"Avaliação oftalmológica periódica em uso crônico (lúpus/artrite); checar QT."},
+{i:"benznidazol",n:"Benznidazol",c:"Antiparasitários",o:"R",b:"ca",r:"Polineuropatia periférica mais frequente em pessoas idosas; intolerância digestiva e rash.",d:"Avaliar risco-benefício na doença de Chagas crônica da pessoa idosa; vigilância neurológica."},
+{i:"cloroquina",n:"Cloroquina",c:"Antiparasitários",o:"RC",b:"mo",r:"Retinopatia dose-dependente, QT longo e hipoglicemia; acumula na pessoa idosa.",d:"Avaliação oftalmológica periódica em uso crônico (lúpus/artrite); checar QT."},
 {i:"primaquina",n:"Primaquina",c:"Antiparasitários",o:"R",b:"mo",r:"Hemólise em deficiência de G6PD; metahemoglobinemia.",d:"Investigar G6PD antes do uso; vigiar urina escura e cianose."},
 {i:"pirimetamina",n:"Pirimetamina",c:"Antiparasitários",o:"R",r:"Depressão medular; associar folinato de cálcio.",d:"Hemograma periódico; folinato já previsto no esquema."},
 {i:"praziquantel",n:"Praziquantel",c:"Antiparasitários",o:"R",r:"Tontura e sonolência; rifampicina anula seu efeito.",d:"Não associar a rifampicina."},
-{i:"meglumina",n:"Meglumina, antimoniato",c:"Antiparasitários",o:"R",b:"ca",r:"Cardiotoxicidade (prolongamento do QT e arritmias), pancreatite e nefrotoxicidade — risco amplificado no idoso.",d:"ECG e eletrólitos durante o tratamento; ambiente com suporte."},
+{i:"meglumina",n:"Meglumina, antimoniato",c:"Antiparasitários",o:"R",b:"ca",r:"Cardiotoxicidade (prolongamento do QT e arritmias), pancreatite e nefrotoxicidade — risco amplificado na pessoa idosa.",d:"ECG e eletrólitos durante o tratamento; ambiente com suporte."},
 {i:"artemeter-lumefantrina",n:"Artemeter + lumefantrina",c:"Antiparasitários",o:"R"},
 {i:"artesunato",n:"Artesunato (± mefloquina)",c:"Antiparasitários",o:"R",r:"Mefloquina: efeitos neuropsiquiátricos.",d:"Vigiar humor e sono quando mefloquina associada."},
-{i:"biperideno",n:"Biperideno",c:"Antiparkinsonianos",o:"R",f:"cp 2 mg · inj",b:"ev",t:["anticol"],ach:3,r:"Anticolinérgico central (Beers: evitar): confusão, alucinações, retenção urinária e constipação no idoso.",d:"Preferir ajuste da levodopa; retirada gradual se em uso crônico."},
-{i:"triexifenidil",n:"Triexifenidil",c:"Antiparkinsonianos",o:"C",b:"ev",t:["anticol"],ach:3,r:"Beers: evitar anticolinérgicos no parkinsonismo do idoso — confusão, alucinações e retenção urinária.",d:"Preferir otimização dopaminérgica; retirada gradual."},
+{i:"biperideno",n:"Biperideno",c:"Antiparkinsonianos",o:"R",f:"cp 2 mg · inj",b:"ev",t:["anticol"],ach:3,r:"Anticolinérgico central (Beers: evitar): confusão, alucinações, retenção urinária e constipação na pessoa idosa.",d:"Preferir ajuste da levodopa; retirada gradual se em uso crônico."},
+{i:"triexifenidil",n:"Triexifenidil",c:"Antiparkinsonianos",o:"C",b:"ev",t:["anticol"],ach:3,r:"Beers: evitar anticolinérgicos no parkinsonismo da pessoa idosa — confusão, alucinações e retenção urinária.",d:"Preferir otimização dopaminérgica; retirada gradual."},
 {i:"levodopa-benserazida",n:"Levodopa + benserazida",c:"Antiparkinsonianos",o:"R",f:"cp 100/25 e 200/50 mg",b:"mo",t:["dopa"],r:"Hipotensão ortostática, alucinações, confusão e discinesia; resposta oscila com a progressão da doença.",d:"Fracionar horários; evitar antieméticos e antipsicóticos antagonistas da dopamina."},
 {i:"levodopa-carbidopa",n:"Levodopa + carbidopa",c:"Antiparkinsonianos",o:"R",f:"cp 250/25 mg",b:"mo",t:["dopa"],r:"Como a levodopa + benserazida: hipotensão ortostática, alucinações e discinesia.",d:"Mesmas precauções; não associar a antipsicóticos ou metoclopramida."},
-{i:"pramipexol",n:"Pramipexol",c:"Antiparkinsonianos",o:"C",b:"ca",t:["dopa"],r:"Hipotensão ortostática, alucinações, sonolência súbita e transtornos de impulso no idoso.",d:"Titular devagar; orientar sobre sono e comportamento; evitar com antipsicóticos."},
+{i:"pramipexol",n:"Pramipexol",c:"Antiparkinsonianos",o:"C",b:"ca",t:["dopa"],r:"Hipotensão ortostática, alucinações, sonolência súbita e transtornos de impulso na pessoa idosa.",d:"Titular devagar; orientar sobre sono e comportamento; evitar com antipsicóticos."},
 {i:"bromocriptina",n:"Bromocriptina",c:"Antiparkinsonianos",o:"C",b:"ca",t:["dopa"],r:"Hipotensão ortostática e alucinações; náusea frequente.",d:"Iniciar com dose baixa; antagonizada por antipsicóticos."},
-{i:"amantadina",n:"Amantadina",c:"Antiparkinsonianos",o:"C",b:"ca",r:"Acumula na doença renal: confusão, alucinações e mioclonias no idoso.",d:"Ajustar por função renal; vigiar cognição."},
+{i:"amantadina",n:"Amantadina",c:"Antiparkinsonianos",o:"C",b:"ca",r:"Acumula na doença renal: confusão, alucinações e mioclonias na pessoa idosa.",d:"Ajustar por função renal; vigiar cognição."},
 {i:"entacapona",n:"Entacapona",c:"Antiparkinsonianos",o:"C",r:"Discinesia e diarreia; intensifica efeitos da levodopa.",d:"Ajustar levodopa ao associar."},
 {i:"rasagilina",n:"Rasagilina",c:"Antiparkinsonianos",o:"C",b:"mo",r:"Inibidor da MAO-B: risco de síndrome serotoninérgica com ISRS e tramadol; hipotensão ortostática.",d:"Evitar associação com fluoxetina, tramadol e outros serotoninérgicos."},
 {i:"donepezila",n:"Donepezila",c:"Antiparkinsonianos",o:"C",b:"mo",t:["ache"],r:"Inibidor da colinesterase: bradicardia, síncope e sintomas digestivos; maior risco com betabloqueador.",d:"Vigiar frequência cardíaca e quedas; antagonizado por fármacos anticolinérgicos."},
@@ -628,11 +639,11 @@ const D=[
 {i:"rivastigmina",n:"Rivastigmina",c:"Antiparkinsonianos",o:"C",f:"sol oral · cápsulas · adesivo",b:"mo",t:["ache"],r:"Bradicardia e síncope; adesivo reduz efeitos digestivos, porém risco de erro de troca.",d:"Orientar troca correta do adesivo; vigiar frequência cardíaca."},
 {i:"memantina",n:"Memantina",c:"Antiparkinsonianos",o:"C",b:"mo",r:"Tontura e confusão; ajustar por função renal.",d:"Titular lentamente; ajuste por TFG."},
 {i:"haloperidol",n:"Haloperidol",c:"Antipsicóticos",o:"R",f:"cp 1/5 mg · sol oral · inj · decanoato",b:"ev",t:["antipsic","sed"],ach:1,r:"Beers: evitar antipsicótico para sintomas comportamentais da demência (mais AVC e mortalidade). Sintomas extrapiramidais, QT longo, quedas e sedação.",d:"Reservar a esquizofrenia, transtorno bipolar ou agitação grave com risco; priorizar medidas não farmacológicas."},
-{i:"clorpromazina",n:"Clorpromazina",c:"Antipsicóticos",o:"R",b:"ev",t:["antipsic","anticol","sed"],ach:3,r:"Fenotiazina com forte ação anticolinérgica, sedação intensa e hipotensão ortostática (Beers: evitar no idoso).",d:"Alto risco de quedas e delirium; discutir alternativas e descalonar."},
-{i:"tioridazina",n:"Tioridazina",c:"Antipsicóticos",o:"R",f:"cp 25/100 mg",b:"ev",t:["antipsic","anticol","sed"],ach:3,r:"Fenotiazina com QT longo e alta carga anticolinérgica; risco arrítmico elevado no idoso.",d:"Fortemente desaconselhada no idoso; discutir substituição com o prescritor."},
+{i:"clorpromazina",n:"Clorpromazina",c:"Antipsicóticos",o:"R",b:"ev",t:["antipsic","anticol","sed"],ach:3,r:"Fenotiazina com forte ação anticolinérgica, sedação intensa e hipotensão ortostática (Beers: evitar na pessoa idosa).",d:"Alto risco de quedas e delirium; discutir alternativas e descalonar."},
+{i:"tioridazina",n:"Tioridazina",c:"Antipsicóticos",o:"R",f:"cp 25/100 mg",b:"ev",t:["antipsic","anticol","sed"],ach:3,r:"Fenotiazina com QT longo e alta carga anticolinérgica; risco arrítmico elevado na pessoa idosa.",d:"Fortemente desaconselhada na pessoa idosa; discutir substituição com o prescritor."},
 {i:"risperidona",n:"Risperidona",c:"Antipsicóticos",o:"RC",f:"cp 1 mg (REMUME) · cp 1/2 mg + sol oral (CEAF)",b:"ev",t:["antipsic","sed"],ach:1,r:"Ressalva de Beers para demência (mais AVC e mortalidade); sintomas extrapiramidais dose-dependentes e hipotensão ortostática.",d:"Se imprescindível: menor dose, menor duração e reavaliação programada."},
-{i:"quetiapina",n:"Quetiapina",c:"Antipsicóticos",o:"C",b:"ev",t:["antipsic","anticol","sed"],ach:2,r:"Ressalva de Beers para demência; sedação importante e hipotensão ortostática no idoso.",d:"Reavaliar indicação real; evitar como indutor de sono."},
-{i:"olanzapina",n:"Olanzapina",c:"Antipsicóticos",o:"C",b:"ev",t:["antipsic","anticol","sed"],ach:2,r:"Ressalva de Beers para demência; ganho ponderal, hiperglicemia e sedação no idoso.",d:"Vigiar glicemia e peso; menor dose eficaz."},
+{i:"quetiapina",n:"Quetiapina",c:"Antipsicóticos",o:"C",b:"ev",t:["antipsic","anticol","sed"],ach:2,r:"Ressalva de Beers para demência; sedação importante e hipotensão ortostática na pessoa idosa.",d:"Reavaliar indicação real; evitar como indutor de sono."},
+{i:"olanzapina",n:"Olanzapina",c:"Antipsicóticos",o:"C",b:"ev",t:["antipsic","anticol","sed"],ach:2,r:"Ressalva de Beers para demência; ganho ponderal, hiperglicemia e sedação na pessoa idosa.",d:"Vigiar glicemia e peso; menor dose eficaz."},
 {i:"clozapina",n:"Clozapina",c:"Antipsicóticos",o:"C",b:"ev",t:["antipsic","anticol","sed"],ach:3,r:"Agranulocitose, sedação intensa, hipotensão ortostática, constipação grave e alta carga anticolinérgica; reservada à esquizofrenia refratária.",d:"Hemograma obrigatório; vigilância de constipação e quedas; jamais usar como sedativo."},
 {i:"ziprasidona",n:"Ziprasidona",c:"Antipsicóticos",o:"C",b:"ev",t:["antipsic","sed"],r:"Prolongamento do QT maior que o de outros atípicos; ressalva de Beers para demência.",d:"Evitar com outros fármacos que prolongam o QT; ECG de base."},
 {i:"omeprazol",n:"Omeprazol",c:"Antissecretores",o:"R",f:"cáps 20 mg · inj 40 mg",b:"mo",r:"Beers 2023: evitar uso por mais de 8 semanas sem indicação de alto risco — fraturas, infecção por C. difficile, hipomagnesemia, deficiência de B12 e nefrite intersticial.",d:"Reavaliar indicação real; tentar descalonar ou usar sob demanda; menor dose eficaz; reduz efeito do clopidogrel."},
@@ -643,7 +654,7 @@ const D=[
 {i:"atazanavir",n:"Atazanavir",c:"Antivirais",o:"R",r:"Inibidor de protease: hiperbilirrubinemia; absorção reduzida por omeprazol.",d:"Evitar associação com inibidor de bomba de prótons."},
 {i:"darunavir",n:"Darunavir",c:"Antivirais",o:"R"},
 {i:"dolutegravir",n:"Dolutegravir",c:"Antivirais",o:"R"},
-{i:"efavirenz",n:"Efavirenz",c:"Antivirais",o:"R",r:"Efeitos no sistema nervoso central (tontura, sonhos vívidos, humor) mais perceptíveis no idoso.",d:"Tomar em jejum, à noite; vigiar humor."},
+{i:"efavirenz",n:"Efavirenz",c:"Antivirais",o:"R",r:"Efeitos no sistema nervoso central (tontura, sonhos vívidos, humor) mais perceptíveis na pessoa idosa.",d:"Tomar em jejum, à noite; vigiar humor."},
 {i:"enfuvirtida",n:"Enfuvirtida",c:"Antivirais",o:"R"},
 {i:"entecavir",n:"Entecavir",c:"Antivirais",o:"R",r:"Ajustar por função renal."},
 {i:"etravirina",n:"Etravirina",c:"Antivirais",o:"R"},
@@ -663,7 +674,7 @@ const D=[
 {i:"permetrina",n:"Permetrina",c:"Escabicidas e pediculicidas",o:"R"},
 {i:"pasta-dagua",n:"Pasta d'água",c:"Dermatológicos",o:"R"},
 {i:"podofilina",n:"Podofilina 25%",c:"Dermatológicos",o:"R",r:"Uso interno (serviço); irritação local.",d:"Uso restrito."},
-{i:"clobetasol",n:"Clobetasol",c:"Dermatológicos",o:"C",r:"Corticoide tópico de potência muito alta: atrofia cutânea maior no idoso.",d:"Ciclos curtos; evitar face e dobras."},
+{i:"clobetasol",n:"Clobetasol",c:"Dermatológicos",o:"C",r:"Corticoide tópico de potência muito alta: atrofia cutânea maior na pessoa idosa.",d:"Ciclos curtos; evitar face e dobras."},
 {i:"calcipotriol",n:"Calcipotriol",c:"Dermatológicos",o:"C"},
 {i:"isotretinoina",n:"Isotretinoína",c:"Dermatológicos",o:"C",r:"Alterações de lipídios e função hepática.",d:"Perfis lipídico e hepático periódicos."},
 {i:"acitretina",n:"Acitretina",c:"Dermatológicos",o:"C",r:"Hepatotoxicidade e dislipidemia.",d:"Perfis lipídico e hepático periódicos."},
@@ -674,30 +685,30 @@ const D=[
 {i:"fenofibrato",n:"Fenofibrato",c:"Hipolipemiantes",o:"C",b:"mo",r:"Ajustar por função renal; risco de miopatia com estatina.",d:"Monitorar creatinina e sintomas musculares."},
 {i:"genfibrozila",n:"Genfibrozila",c:"Hipolipemiantes",o:"C",b:"mo",r:"Aumenta drasticamente o risco de rabdomiólise com estatinas.",d:"Evitar associação com estatina; preferir manejo isolado."},
 {i:"algestona-estradiol",n:"Algestona + estradiol (injetável)",c:"Hormônios sexuais",o:"R",r:"Contraceptivo; risco tromboembólico.",d:"Fora do foco geriátrico habitual; reavaliar indicação."},
-{i:"estriol",n:"Estriol (creme vaginal)",c:"Hormônios sexuais",o:"R",r:"Uso local com absorção sistêmica baixa; seguro no idoso.",d:"Boa opção para atrofia vulvovaginal."},
-{i:"estrogenios-conjugados",n:"Estrogênios conjugados",c:"Hormônios sexuais",o:"R",r:"Risco tromboembólico e de câncer de endométrio sem oposição progestagênica.",d:"Reavaliar indicação e duração no idoso."},
+{i:"estriol",n:"Estriol (creme vaginal)",c:"Hormônios sexuais",o:"R",r:"Uso local com absorção sistêmica baixa; seguro na pessoa idosa.",d:"Boa opção para atrofia vulvovaginal."},
+{i:"estrogenios-conjugados",n:"Estrogênios conjugados",c:"Hormônios sexuais",o:"R",r:"Risco tromboembólico e de câncer de endométrio sem oposição progestagênica.",d:"Reavaliar indicação e duração na pessoa idosa."},
 {i:"etinilestradiol-levonorgestrel",n:"Etinilestradiol + levonorgestrel",c:"Hormônios sexuais",o:"R",r:"Contraceptivo; risco tromboembólico.",d:"Fora do foco geriátrico habitual."},
 {i:"levonorgestrel",n:"Levonorgestrel (contracepção de emergência)",c:"Hormônios sexuais",o:"R"},
-{i:"medroxiprogesterona",n:"Medroxiprogesterona",c:"Hormônios sexuais",o:"R",r:"Retenção hídrica e alteração de humor.",d:"Reavaliar indicação no idoso."},
+{i:"medroxiprogesterona",n:"Medroxiprogesterona",c:"Hormônios sexuais",o:"R",r:"Retenção hídrica e alteração de humor.",d:"Reavaliar indicação na pessoa idosa."},
 {i:"noretisterona",n:"Noretisterona (± estradiol)",c:"Hormônios sexuais",o:"R"},
 {i:"levotiroxina",n:"Levotiroxina sódica",c:"Hormônios tireoidianos",o:"R",f:"cp 25/50/100 mcg",b:"mo",r:"Superdosagem: fibrilação atrial, angina e osteoporose. Absorção reduzida por cálcio, ferro e inibidores de bomba de prótons.",d:"Iniciar com dose baixa e titular devagar; TSH 6 a 8 semanas após ajuste; separar do carbonato de cálcio e do sulfato ferroso."},
 {i:"propiltiouracila",n:"Propiltiouracila",c:"Hormônios tireoidianos",o:"R",r:"Hepatotoxicidade rara, porém grave; agranulocitose.",d:"Orientar sinais de alerta (febre, icterícia)."},
-{i:"glibenclamida",n:"Glibenclamida",c:"Insulinas e antidiabéticos orais",o:"R",f:"cp 5 mg",b:"ev",t:["hipogl","sulf"],r:"Beers: evitar — hipoglicemia prolongada e grave no idoso (metabólitos ativos, acúmulo renal).",d:"Substituir por estratégia com menor risco hipoglicêmico; se hipoglicemia documentada, suspender."},
-{i:"gliclazida",n:"Gliclazida",c:"Insulinas e antidiabéticos orais",o:"R",f:"cp 30 mg ação prolongada",b:"mo",t:["hipogl","sulf"],r:"Sulfonilureia com risco hipoglicêmico menor que a glibenclamida, ainda assim relevante no idoso.",d:"Menor dose eficaz; orientar sinais de hipoglicemia; preferir metformina quando possível."},
+{i:"glibenclamida",n:"Glibenclamida",c:"Insulinas e antidiabéticos orais",o:"R",f:"cp 5 mg",b:"ev",t:["hipogl","sulf"],r:"Beers: evitar — hipoglicemia prolongada e grave na pessoa idosa (metabólitos ativos, acúmulo renal).",d:"Substituir por estratégia com menor risco hipoglicêmico; se hipoglicemia documentada, suspender."},
+{i:"gliclazida",n:"Gliclazida",c:"Insulinas e antidiabéticos orais",o:"R",f:"cp 30 mg ação prolongada",b:"mo",t:["hipogl","sulf"],r:"Sulfonilureia com risco hipoglicêmico menor que a glibenclamida, ainda assim relevante na pessoa idosa.",d:"Menor dose eficaz; orientar sinais de hipoglicemia; preferir metformina quando possível."},
 {i:"metformina",n:"Metformina",c:"Insulinas e antidiabéticos orais",o:"R",f:"cp 500/850 mg",b:"mo",t:["hipogl"],r:"Intolerância digestiva no início; deficiência de B12 no uso prolongado; contraindicada com TFG menor que 30 mL/min.",d:"TFG periódica; pausar em desidratação, infecção grave ou jejum prolongado."},
-{i:"dapagliflozina",n:"Dapagliflozina",c:"Insulinas e antidiabéticos orais",o:"C",b:"ca",r:"Inibidor de SGLT2: desidratação e hipotensão no idoso (pior com diurético), cetoacidose euglicêmica e infecções genitais.",d:"Orientar hidratação; regras de pausa em doença aguda ou jejum; vigiar volume em uso com diurético."},
+{i:"dapagliflozina",n:"Dapagliflozina",c:"Insulinas e antidiabéticos orais",o:"C",b:"ca",r:"Inibidor de SGLT2: desidratação e hipotensão na pessoa idosa (pior com diurético), cetoacidose euglicêmica e infecções genitais.",d:"Orientar hidratação; regras de pausa em doença aguda ou jejum; vigiar volume em uso com diurético."},
 {i:"insulina-nph",n:"Insulina humana NPH",c:"Insulinas e antidiabéticos orais",o:"R",b:"mo",t:["hipogl","insulina"],r:"Hipoglicemia pelo pico de ação; regimes complexos são perigosos quando há declínio cognitivo ou visual.",d:"Simplificar esquema; avaliar capacidade de automanuseio; meta glicêmica individualizada."},
-{i:"insulina-regular",n:"Insulina humana regular",c:"Insulinas e antidiabéticos orais",o:"R",b:"mo",t:["hipogl","insulina"],r:"Hipoglicemia; regimes de escala móvel como única estratégia são desaconselhados no idoso.",d:"Preferir esquema basal estruturado; revisar metas."},
-{i:"insulina-glargina",n:"Insulina glargina",c:"Insulinas e antidiabéticos orais",o:"RC",b:"mo",t:["hipogl","insulina"],r:"Basal com menor pico, ainda assim risco de hipoglicemia no idoso frágil.",d:"Meta individualizada; reduzir dose se hipoglicemias."},
+{i:"insulina-regular",n:"Insulina humana regular",c:"Insulinas e antidiabéticos orais",o:"R",b:"mo",t:["hipogl","insulina"],r:"Hipoglicemia; regimes de escala móvel como única estratégia são desaconselhados na pessoa idosa.",d:"Preferir esquema basal estruturado; revisar metas."},
+{i:"insulina-glargina",n:"Insulina glargina",c:"Insulinas e antidiabéticos orais",o:"RC",b:"mo",t:["hipogl","insulina"],r:"Basal com menor pico, ainda assim risco de hipoglicemia na pessoa idosa frágil.",d:"Meta individualizada; reduzir dose se hipoglicemias."},
 {i:"insulina-analoga-rapida",n:"Insulina análoga de ação rápida",c:"Insulinas e antidiabéticos orais",o:"RC",b:"mo",t:["hipogl","insulina"],r:"Hipoglicemia; exige capacidade de automonitorização.",d:"Avaliar capacidade de automanuseio e contagem de carboidratos."},
 {i:"bisacodil",n:"Bisacodil",c:"Laxativos",o:"R",r:"Uso pontual; cólicas e perda de resposta com uso crônico.",d:"Preferir medidas não farmacológicas e laxantes osmóticos para uso regular."},
-{i:"lactulose",n:"Lactulose",c:"Laxativos",o:"R",r:"Flatulência e cólicas; laxante osmótico seguro no idoso.",d:"Boa primeira linha para constipação crônica."},
-{i:"oleo-mineral",n:"Óleo mineral puro",c:"Laxativos",o:"R",r:"Risco de pneumonite lipoide por aspiração no idoso com disfagia ou acamado; reduz absorção de vitaminas lipossolúveis.",d:"Evitar em disfagia ou acamados; preferir lactulose."},
+{i:"lactulose",n:"Lactulose",c:"Laxativos",o:"R",r:"Flatulência e cólicas; laxante osmótico seguro na pessoa idosa.",d:"Boa primeira linha para constipação crônica."},
+{i:"oleo-mineral",n:"Óleo mineral puro",c:"Laxativos",o:"R",r:"Risco de pneumonite lipoide por aspiração na pessoa idosa com disfagia ou acamada; reduz absorção de vitaminas lipossolúveis.",d:"Evitar em disfagia ou acamados; preferir lactulose."},
 {i:"sorbitol-laurilsulfato",n:"Sorbitol + laurilsulfato de sódio (retal)",c:"Laxativos",o:"R"},
 {i:"glicerina",n:"Glicerina 12% (enema)",c:"Laxativos",o:"R"},
-{i:"nicotina",n:"Nicotina (adesivo e goma)",c:"Controle do tabagismo",o:"R",r:"Segura para cessação do tabagismo no idoso.",d:"Apoio essencial para parar de fumar; ajustar dose pela carga tabágica."},
+{i:"nicotina",n:"Nicotina (adesivo e goma)",c:"Controle do tabagismo",o:"R",r:"Segura para cessação do tabagismo na pessoa idosa.",d:"Apoio essencial para parar de fumar; ajustar dose pela carga tabágica."},
 {i:"carvao-ativado",n:"Carvão ativado",c:"Intoxicações exógenas",o:"R"},
-{i:"alfapeginterferona",n:"Alfapeginterferona 2A",c:"Imunologia",o:"R",b:"mo",r:"Síndrome gripal, depressão e citopenias; tolerabilidade reduzida no idoso.",d:"Vigiar humor e hemograma."},
+{i:"alfapeginterferona",n:"Alfapeginterferona 2A",c:"Imunologia",o:"R",b:"mo",r:"Síndrome gripal, depressão e citopenias; tolerabilidade reduzida na pessoa idosa.",d:"Vigiar humor e hemograma."},
 {i:"imunoglobulina-antihepb",n:"Imunoglobulina humana anti-hepatite B",c:"Imunologia",o:"R"},
 {i:"cloreto-ferrico",n:"Cloreto férrico (gel)",c:"Patologias do colo uterino",o:"R"},
 {i:"deslanosideo",n:"Deslanosídeo",c:"Medicamentos para insuficiência cardíaca",o:"R",b:"ca",r:"Glicosídeo cardíaco de uso venoso: mesmas precauções da digoxina (janela estreita, hipocalemia precipita toxicidade).",d:"Uso em urgência; vigiar potássio e nível digitálico."},
@@ -714,7 +725,7 @@ const D=[
 {i:"raloxifeno",n:"Raloxifeno",c:"Osteoporose e metabolismo ósseo",o:"C",b:"ca",r:"Aumento do risco tromboembólico; fogachos.",d:"Evitar em imobilização prolongada ou história de trombose."},
 {i:"calcitonina",n:"Calcitonina (spray nasal)",c:"Osteoporose e metabolismo ósseo",o:"C",r:"Eficácia modesta; uso limitado no tempo por possível risco oncológico em longo prazo.",d:"Reservar a situações específicas e por menor duração."},
 {i:"romosozumabe",n:"Romosozumabe",c:"Osteoporose e metabolismo ósseo",o:"C",b:"ca",r:"Contraindicado após infarto ou AVC no último ano.",d:"Checar história cardiovascular recente antes de iniciar."},
-{i:"acetazolamida",n:"Acetazolamida",c:"Oftalmológicos",o:"R",b:"mo",r:"Acidose metabólica, hipocalemia e parestesias; risco de litíase; ajustar por função renal.",d:"Vigiar eletrólitos e função renal no idoso."},
+{i:"acetazolamida",n:"Acetazolamida",c:"Oftalmológicos",o:"R",b:"mo",r:"Acidose metabólica, hipocalemia e parestesias; risco de litíase; ajustar por função renal.",d:"Vigiar eletrólitos e função renal na pessoa idosa."},
 {i:"timolol",n:"Timolol colírio (isolado e associações)",c:"Oftalmológicos",o:"R",b:"mo",t:["bbtopico"],r:"Absorção sistêmica do colírio: bradicardia, broncoespasmo e hipotensão; soma-se ao betabloqueador oral.",d:"Ocluir o ponto lacrimal após instilar; revisar betabloqueio total; associações (bimatoprosta, brinzolamida, dorzolamida, latanoprosta, travoprosta) mantêm o mesmo cuidado."},
 {i:"pilocarpina",n:"Pilocarpina colírio",c:"Oftalmológicos",o:"R",b:"ca",r:"Colinérgico: bradicardia e broncoespasmo por absorção sistêmica.",d:"Cautela em cardiopatas e asmáticos; oclusão do ponto lacrimal."},
 {i:"bimatoprosta",n:"Bimatoprosta",c:"Oftalmológicos",o:"R"},
@@ -743,7 +754,7 @@ const D=[
 {i:"piridoxina",n:"Piridoxina (vitamina B6)",c:"Vitaminas e minerais",o:"R",r:"Megadoses crônicas causam neuropatia.",d:"Usar dose profilática com isoniazida."},
 {i:"tiamina",n:"Tiamina (vitamina B1)",c:"Vitaminas e minerais",o:"R"},
 {i:"complexo-b",n:"Vitaminas do complexo B (injetável)",c:"Vitaminas e minerais",o:"R"},
-{i:"alteplase",n:"Alteplase",c:"Trombolíticos",o:"R",b:"ca",r:"Risco hemorrágico maior no idoso, inclusive hemorragia intracraniana.",d:"Critérios rigorosos de elegibilidade; ambiente com suporte."},
+{i:"alteplase",n:"Alteplase",c:"Trombolíticos",o:"R",b:"ca",r:"Risco hemorrágico maior na pessoa idosa, inclusive hemorragia intracraniana.",d:"Critérios rigorosos de elegibilidade; ambiente com suporte."},
 {i:"monoetanolamina",n:"Monoetanolamina, oleato",c:"Vasoprotetores",o:"R"},
 {i:"alfaepoetina",n:"Alfaepoetina",c:"CEAF — hematologia",o:"C",b:"mo",r:"Hipertensão e risco trombótico; exigência de alvos de hemoglobina.",d:"Pressão arterial e hemoglobina seriadas."},
 {i:"sacarato-ferrico",n:"Sacarato de hidróxido férrico",c:"CEAF — hematologia",o:"C",b:"mo",r:"Reações infusionais e hipotensão.",d:"Infusão lenta com vigilância."},
@@ -754,7 +765,7 @@ const D=[
 {i:"deferiprona",n:"Deferiprona",c:"CEAF — hematologia",o:"C",b:"mo",r:"Agranulocitose.",d:"Hemograma semanal no início."},
 {i:"hidroxiureia",n:"Hidroxiureia",c:"CEAF — hematologia",o:"C",b:"mo",r:"Mielossupressão; ajustar por função renal.",d:"Hemograma periódico."},
 {i:"filgrastim",n:"Filgrastim",c:"CEAF — hematologia",o:"C",r:"Dor óssea; leucocitose.",d:"Hemograma de controle."},
-{i:"imunoglobulina-humana",n:"Imunoglobulina humana",c:"CEAF — imunologia",o:"C",b:"mo",r:"Risco trombótico e renal maior no idoso; cefaleia.",d:"Hidratação e infusão lenta; vigiar função renal."},
+{i:"imunoglobulina-humana",n:"Imunoglobulina humana",c:"CEAF — imunologia",o:"C",b:"mo",r:"Risco trombótico e renal maior na pessoa idosa; cefaleia.",d:"Hidratação e infusão lenta; vigiar função renal."},
 {i:"azatioprina",n:"Azatioprina",c:"CEAF — imunossupressores",o:"C",b:"mo",r:"Mielossupressão; interação grave com alopurinol; risco oncológico cumulativo.",d:"Hemograma periódico; jamais associar a alopurinol sem redução drástica de dose."},
 {i:"metotrexato",n:"Metotrexato",c:"CEAF — imunossupressores",o:"C",b:"mo",r:"Mielossupressão, hepatotoxicidade e mucosite; acumula na doença renal; interação grave com sulfametoxazol-trimetoprima.",d:"Função renal e hemograma; ácido fólico suplementar; reforçar a posologia semanal."},
 {i:"ciclosporina",n:"Ciclosporina",c:"CEAF — imunossupressores",o:"C",b:"mo",r:"Nefrotoxicidade, hipertensão e hiperplasia gengival; eleva-se com macrolídeos e interage com estatinas.",d:"Nível sérico, pressão arterial e creatinina periódicos."},
@@ -765,10 +776,10 @@ const D=[
 {i:"leflunomida",n:"Leflunomida",c:"CEAF — imunossupressores",o:"C",b:"mo",r:"Hepatotoxicidade e hipertensão; meia-vida muito longa.",d:"Função hepática e pressão arterial periódicas."},
 {i:"sulfassalazina",n:"Sulfassalazina",c:"CEAF — imunossupressores",o:"C",b:"mo",r:"Mielossupressão e hipersensibilidade; deficiência de folato.",d:"Hemograma periódico; suplementar folato."},
 {i:"mesalazina",n:"Mesalazina",c:"CEAF — imunossupressores",o:"C",r:"Nefrite intersticial rara.",d:"Função renal periódica."},
-{i:"ciclofosfamida",n:"Ciclofosfamida",c:"CEAF — imunossupressores",o:"C",b:"mo",r:"Mielossupressão e cistite hemorrágica.",d:"Hemograma e hidratação; menor dose no idoso."},
+{i:"ciclofosfamida",n:"Ciclofosfamida",c:"CEAF — imunossupressores",o:"C",b:"mo",r:"Mielossupressão e cistite hemorrágica.",d:"Hemograma e hidratação; menor dose na pessoa idosa."},
 {i:"hidroxicloroquina",n:"Hidroxicloroquina",c:"CEAF — imunossupressores",o:"C",b:"mo",r:"Retinopatia dose-dependente; QT longo.",d:"Rastreio oftalmológico periódico; dose por peso."},
-{i:"adalimumabe",n:"Adalimumabe",c:"CEAF — imunobiológicos",o:"C",b:"mo",r:"Imunossupressor: maior risco de infecções graves e reativação de tuberculose no idoso.",d:"Rastreio de tuberculose e vacinas atualizadas antes do início; orientar sinais de infecção."},
-{i:"etanercepte",n:"Etanercepte",c:"CEAF — imunobiológicos",o:"C",b:"mo",r:"Como os anti-TNF: infecções graves no idoso.",d:"Mesmas precauções da classe."},
+{i:"adalimumabe",n:"Adalimumabe",c:"CEAF — imunobiológicos",o:"C",b:"mo",r:"Imunossupressor: maior risco de infecções graves e reativação de tuberculose na pessoa idosa.",d:"Rastreio de tuberculose e vacinas atualizadas antes do início; orientar sinais de infecção."},
+{i:"etanercepte",n:"Etanercepte",c:"CEAF — imunobiológicos",o:"C",b:"mo",r:"Como os anti-TNF: infecções graves na pessoa idosa.",d:"Mesmas precauções da classe."},
 {i:"infliximabe",n:"Infliximabe",c:"CEAF — imunobiológicos",o:"C",b:"mo",r:"Como os anti-TNF: infecções graves e reações infusionais.",d:"Mesmas precauções da classe."},
 {i:"certolizumabe",n:"Certolizumabe pegol",c:"CEAF — imunobiológicos",o:"C",b:"mo",r:"Como os anti-TNF.",d:"Mesmas precauções da classe."},
 {i:"golimumabe",n:"Golimumabe",c:"CEAF — imunobiológicos",o:"C",b:"mo",r:"Como os anti-TNF.",d:"Mesmas precauções da classe."},
@@ -796,7 +807,7 @@ const D=[
 {i:"tafamidis",n:"Tafamidis",c:"CEAF — neurologia",o:"C"},
 {i:"piridostigmina",n:"Piridostigmina",c:"CEAF — neurologia",o:"C",r:"Cólicas, diarreia e bradicardia.",d:"Ajustar por resposta; cautela com betabloqueador."},
 {i:"toxina-botulinica",n:"Toxina botulínica tipo A",c:"CEAF — neurologia",o:"C",r:"Fraqueza local; efeito transitório.",d:"Respeitar intervalos mínimos entre aplicações."},
-{i:"desmopressina",n:"Desmopressina",c:"CEAF — endocrinologia",o:"C",b:"ev",r:"Beers: evitar no tratamento de noctúria ou polidipsia no idoso — alto risco de hiponatremia grave.",d:"Suspender ou substituir; dosar sódio se mantida."},
+{i:"desmopressina",n:"Desmopressina",c:"CEAF — endocrinologia",o:"C",b:"ev",r:"Beers: evitar no tratamento de noctúria ou polidipsia na pessoa idosa — alto risco de hiponatremia grave.",d:"Suspender ou substituir; dosar sódio se mantida."},
 {i:"somatropina",n:"Somatropina",c:"CEAF — endocrinologia",o:"C"},
 {i:"gosserrelina",n:"Gosserrelina",c:"CEAF — endocrinologia",o:"C"},
 {i:"leuprorrelina",n:"Leuprorrelina",c:"CEAF — endocrinologia",o:"C"},
@@ -877,7 +888,7 @@ const IX=[
 {a:"tag:bra",b:"cloreto-potassio",s:"alta",e:"Hipercalemia aditiva.",c:"Repor potássio apenas com monitorização sérica."},
 {a:"sulfametoxazol-trimetoprima",b:"tag:ieca",s:"alta",e:"Hipercalemia: a trimetoprima age como poupador de potássio.",c:"Evitar ou monitorar potássio em 3 a 5 dias."},
 {a:"sulfametoxazol-trimetoprima",b:"tag:bra",s:"alta",e:"Hipercalemia aditiva.",c:"Evitar ou monitorar potássio."},
-{a:"sulfametoxazol-trimetoprima",b:"espironolactona",s:"alta",e:"Hipercalemia grave descrita em idosos.",c:"Preferir outro antimicrobiano."},
+{a:"sulfametoxazol-trimetoprima",b:"espironolactona",s:"alta",e:"Hipercalemia grave descrita em pessoas idosas.",c:"Preferir outro antimicrobiano."},
 {a:"sulfametoxazol-trimetoprima",b:"metotrexato",s:"alta",e:"Potencialização da toxicidade do metotrexato (antifolatos somados).",c:"Evitar a associação."},
 {a:"tag:diuret",b:"tag:litio",s:"alta",e:"Depleção de sódio aumenta a reabsorção do lítio: toxicidade.",c:"Evitar; litemia se associação inevitável."},
 {a:"tag:ieca",b:"tag:litio",s:"alta",e:"Redução da excreção do lítio: toxicidade.",c:"Evitar ou monitorar litemia."},
@@ -912,7 +923,7 @@ const IX=[
 {a:"metoclopramida",b:"tag:antipsic",s:"moderada",e:"Sintomas extrapiramidais aditivos.",c:"Evitar associação prolongada."},
 {a:"domperidona",b:"metoclopramida",s:"moderada",e:"Duplicidade procinética: QT e sintomas extrapiramidais aditivos.",c:"Manter apenas um dos agentes."},
 {a:"tag:antipsic",b:"tag:antipsic",s:"moderada",e:"Polifarmácia antipsicótica: sintomas extrapiramidais, QT, quedas e mortalidade.",c:"Consolidar em monoterapia."},
-{a:"tag:antipsic",b:"tag:benzo",s:"moderada",e:"Sedação, hipotensão e quedas.",c:"Evitar uso rotineiro combinado no idoso."},
+{a:"tag:antipsic",b:"tag:benzo",s:"moderada",e:"Sedação, hipotensão e quedas.",c:"Evitar uso rotineiro combinado na pessoa idosa."},
 {a:"tag:benzo",b:"tag:benzo",s:"moderada",e:"Duplicidade de benzodiazepínico.",c:"Manter um único agente; plano de retirada."},
 {a:"alprazolam",b:"tag:macro",s:"moderada",e:"Macrolídeos elevam o alprazolam (CYP3A4): sedação excessiva.",c:"Reduzir dose ou trocar o antimicrobiano."},
 {a:"amiodarona",b:"tag:fluoroq",s:"alta",e:"Prolongamento aditivo do QT: risco de torsades de pointes.",c:"Evitar; escolher antimicrobiano sem efeito no QT."},
@@ -982,9 +993,7 @@ const IX=[
 {a:"cloroquina",b:"amiodarona",s:"moderada",e:"QT prolongado aditivo.",c:"Avaliar alternativas; ECG."},
 {a:"primaquina",b:"dapsona",s:"moderada",e:"Hemólise e metahemoglobinemia aditivas.",c:"Hemograma e vigilância clínica."},
 {a:"tag:ache",b:"tag:anticol",s:"moderada",e:"Antagonismo: o fármaco anticolinérgico reduz o efeito do inibidor da colinesterase.",c:"Reavaliar o anticolinérgico; priorizar o tratamento cognitivo."},
-{a:"linezolida",b:"fluoxetina",s:"alta",e:"Risco de síndrome serotoninérgica.",c:"Já listada acima por reciprocidade; reforçar o alerta."},
-{a:"ganciclovir",b:"zidovudina",s:"moderada",e:"Mielossupressão aditiva.",c:"Hemograma frequente; discutir alternativas."},
-{a:"fluoxetina",b:"tramadol",s:"alta",e:"Síndrome serotoninérgica e redução do limiar convulsivo.",c:"Coberta pela regra tramadol + ISRS; reforçar o alerta."}
+{a:"ganciclovir",b:"zidovudina",s:"moderada",e:"Mielossupressão aditiva.",c:"Hemograma frequente; discutir alternativas."}
 ];
 
 /* ============ LÓGICA ============ */
@@ -1117,7 +1126,6 @@ document.getElementById("btnVerify").onclick=()=>{
   for(let i=0;i<sel.length;i++)for(let j=i+1;j<sel.length;j++){
     const a=sel[i],b=sel[j];let best=null;
     IX.forEach(r=>{
-      if((r.e||"").startsWith("Coberta")||(r.e||"").startsWith("Já listada"))return;
       const hit=(matchRule(r.a,a)&&matchRule(r.b,b))||(matchRule(r.a,b)&&matchRule(r.b,a));
       if(hit&&(!best||SEVR[r.s]>SEVR[best.s]))best=r;
     });
@@ -1127,8 +1135,8 @@ document.getElementById("btnVerify").onclick=()=>{
   const achList=sel.filter(d=>d.ach),achSum=achList.reduce((s,d)=>s+d.ach,0);
   const cns=sel.filter(d=>d.sed||(d.t||[]).some(t=>["benzo","opioid","gaba","antipsic"].includes(t)));
   const burden=[];
-  if(achSum>=2)burden.push({t:`Carga anticolinérgica ${achSum>=3?"ALTA":"moderada"} (escore ${achSum})`,x:`${achList.map(d=>d.n).join(", ")}. No idoso, a soma anticolinérgica associa-se a confusão, delirium, constipação, retenção urinária e declínio cognitivo. Discutir simplificação com o prescritor.`});
-  if(cns.length>=2)burden.push({t:`Carga de depressores do SNC elevada (${cns.length} fármacos)`,x:`${cns.map(d=>d.n).join(", ")}. A combinação de sedativos no idoso aumenta quedas, fraturas, delirium e depressão respiratória. Priorizar descalonar.`});
+  if(achSum>=2)burden.push({t:`Carga anticolinérgica ${achSum>=3?"ALTA":"moderada"} (escore ${achSum})`,x:`${achList.map(d=>d.n).join(", ")}. Na pessoa idosa, a soma anticolinérgica associa-se a confusão, delirium, constipação, retenção urinária e declínio cognitivo. Discutir simplificação com o prescritor.`});
+  if(cns.length>=2)burden.push({t:`Carga de depressores do SNC elevada (${cns.length} fármacos)`,x:`${cns.map(d=>d.n).join(", ")}. A combinação de sedativos na pessoa idosa aumenta quedas, fraturas, delirium e depressão respiratória. Priorizar descalonar.`});
   const qd=sel.filter(d=>(d.t||[]).some(t=>["benzo","opioid","antipsic","gaba","atc","alfabloq","nitrato"].includes(t)));
   if(qd.length>=2)burden.push({t:`${qd.length} fármacos associados a quedas`,x:`${qd.map(d=>d.n).join(", ")}. Avaliar histórico de quedas, hipotensão ortostática e medidas de prevenção ambiental.`});
 
@@ -1149,7 +1157,7 @@ document.getElementById("btnVerify").onclick=()=>{
       mpiList.appendChild(det);
     }
   }else{
-    mpiList.innerHTML=`<div class="okbox"><span>✓</span><div><b>Nenhum efeito potencialmente adverso em idosos foi identificado</b> segundo os Critérios de Beers 2023 e as cautelas geriátricas indexadas. Mantenha a vigilância da função renal e hepática e a reavaliação periódica da indicação de cada fármaco.</div></div>`;
+    mpiList.innerHTML=`<div class="okbox"><span>✓</span><div><b>Nenhum efeito potencialmente adverso na pessoa idosa foi identificado</b> segundo os Critérios de Beers 2023 e as cautelas geriátricas indexadas. Mantenha a vigilância da função renal e hepática e a reavaliação periódica da indicação de cada fármaco.</div></div>`;
   }
   const ixList=document.getElementById("ixList");ixList.innerHTML="";
   if(found.length){
@@ -1159,7 +1167,7 @@ document.getElementById("btnVerify").onclick=()=>{
       ixList.appendChild(card);
     });
   }else{
-    ixList.innerHTML=`<div class="okbox"><span>✓</span><div><b>Nenhuma interação medicamentosa clinicamente relevante foi identificada</b> entre os medicamentos selecionados. Lembre-se: interações com OTC, fitoterápicos e fármacos fora das listas oficiais não são cobertas — revise o esquema completo.</div></div>`;
+    ixList.innerHTML=`<div class="okbox"><span>✓</span><div><b>Nenhuma interação medicamentosa clinicamente relevante foi identificada</b> entre os medicamentos selecionados. Lembre-se: interações com medicamentos isentos de prescrição, fitoterápicos e fármacos fora das listas oficiais não são cobertas — revise o esquema completo.</div></div>`;
   }
   const blkBurd=document.getElementById("blkBurd");blkBurd.innerHTML="";
   if(burden.length){
@@ -1173,6 +1181,114 @@ document.getElementById("btnVerify").onclick=()=>{
 /* revelação ao rolar */
 const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add("in");io.unobserve(e.target)}}),{threshold:.12});
 document.querySelectorAll(".rv").forEach(el=>io.observe(el));
+</script>
+
+<!-- ============================================================
+     POP-UP DE OBSERVAÇÕES PARA IMPRESSÃO (recurso adicional)
+     Posiciona a seção de observações APÓS os três blocos de
+     resultado (efeitos adversos, interações e cargas), logo
+     acima do rodapé "PARECER DE APOIO".
+============================================================= -->
+<script>
+(function(){
+  if(document.getElementById('obsOverlay')) return;
+
+  /* CSS do pop-up (a seção de observações já está estilizada no CSS principal) */
+  var css = ''
+  + '#obsOverlay{position:fixed;inset:0;background:rgba(9,58,49,.55);display:none;align-items:center;justify-content:center;z-index:9999;padding:16px;backdrop-filter:blur(2px);}'
+  + '#obsOverlay.open{display:flex;}'
+  + '.obs-modal{background:#fff;border-radius:14px;max-width:660px;width:100%;box-shadow:0 24px 70px rgba(0,0,0,.35);overflow:hidden;animation:obsIn .18s ease;}'
+  + '@keyframes obsIn{from{opacity:0;transform:translateY(14px);}to{opacity:1;transform:none;}}'
+  + '.obs-modal-hd{background:#0e6e5c;color:#fff;padding:16px 20px;}'
+  + '.obs-modal-hd h3{font-size:18px;margin:0 0 4px;}'
+  + '.obs-modal-hd p{font-size:13px;opacity:.92;margin:0;}'
+  + '.obs-modal-bd{padding:18px 20px;}'
+  + '.obs-modal-bd label{font-size:13px;font-weight:700;color:#33423d;display:block;margin-bottom:8px;}'
+  + '#obsText{width:100%;min-height:170px;resize:vertical;padding:12px;border:1.5px solid #cbd5d0;border-radius:10px;font-family:inherit;font-size:15px;line-height:1.55;box-sizing:border-box;}'
+  + '#obsText:focus{outline:none;border-color:#0e6e5c;box-shadow:0 0 0 3px rgba(14,110,92,.16);}'
+  + '.obs-hint{font-size:12px;color:#6b7c76;margin-top:9px;}'
+  + '.obs-modal-ft{display:flex;gap:10px;flex-wrap:wrap;justify-content:flex-end;padding:16px 20px;border-top:1px solid #e3e8e5;background:#f7faf9;}'
+  + '.obs-btn{padding:11px 18px;border-radius:9px;font-weight:700;font-size:14px;cursor:pointer;border:1.5px solid transparent;font-family:inherit;}'
+  + '.obs-btn.cancel{background:#fff;color:#51625f;border-color:#cbd5d0;}'
+  + '.obs-btn.cancel:hover{background:#f0f4f2;}'
+  + '.obs-btn.plain{background:#fff;color:#0e6e5c;border-color:#0e6e5c;}'
+  + '.obs-btn.plain:hover{background:#e9f4f0;}'
+  + '.obs-btn.confirm{background:#0e6e5c;color:#fff;}'
+  + '.obs-btn.confirm:hover{background:#0a5446;}';
+
+  var styleEl = document.createElement('style');
+  styleEl.appendChild(document.createTextNode(css));
+  document.head.appendChild(styleEl);
+
+  /* Cria o pop-up */
+  var overlay = document.createElement('div');
+  overlay.id = 'obsOverlay';
+  overlay.innerHTML =
+    '<div class="obs-modal" role="dialog" aria-modal="true" aria-label="Observações para impressão">'
+    + '<div class="obs-modal-hd"><h3>✎ Observações e orientações ao prescritor</h3>'
+    + '<p>O texto digitado abaixo será incluído no parecer impresso, ao final do documento.</p></div>'
+    + '<div class="obs-modal-bd">'
+    + '<label for="obsText">Escreva as observações e orientações para a consulta médica:</label>'
+    + '<textarea id="obsText" placeholder="Ex.: Solicito avaliação quanto à manutenção/substituição de diazepam, considerando o risco de quedas (Critérios de Beers 2023). Sugiro reavaliação da função renal para ajuste de doses."></textarea>'
+    + '<div class="obs-hint">Se preferir, imprima sem observações: o documento sairá com linhas em branco para preenchimento à mão.</div>'
+    + '</div>'
+    + '<div class="obs-modal-ft">'
+    + '<button type="button" class="obs-btn cancel" id="obsCancel">Cancelar</button>'
+    + '<button type="button" class="obs-btn plain" id="obsPlain">Imprimir sem observações</button>'
+    + '<button type="button" class="obs-btn confirm" id="obsConfirm">Adicionar e imprimir</button>'
+    + '</div>'
+    + '</div>';
+  document.body.appendChild(overlay);
+  var ta = document.getElementById('obsText');
+
+  /* Renderiza o conteúdo no elemento #obsPrintSection existente */
+  function renderNotes(text){
+    var sec = document.getElementById('obsPrintSection');
+    if(!sec) return;
+    var hasText = text && text.replace(/\s/g,'').length > 0;
+    sec.classList.remove('no-print'); // passa a aparecer na impressão
+    var html = '<h4>✎ Observações e orientações do farmacêutico</h4>';
+    html += hasText ? '<div class="obs-content"></div>' : '<div class="obs-content obs-blank"></div>';
+    html += '<div class="obs-meta">Assinatura / carimbo do farmacêutico: _________________________________</div>';
+    sec.innerHTML = html;
+    if(hasText){ sec.querySelector('.obs-content').textContent = text; }
+  }
+
+  /* Abre / fecha o pop-up */
+  function openModal(){
+    var sec = document.getElementById('obsPrintSection');
+    var prev = sec ? sec.querySelector('.obs-content') : null;
+    if(prev && !prev.classList.contains('obs-blank')){ ta.value = prev.textContent; }
+    overlay.classList.add('open');
+    setTimeout(function(){ ta.focus(); }, 60);
+  }
+  function closeModal(){ overlay.classList.remove('open'); }
+
+  document.getElementById('obsCancel').addEventListener('click', closeModal);
+  overlay.addEventListener('click', function(e){ if(e.target === overlay) closeModal(); });
+  document.addEventListener('keydown', function(e){ if(e.key === 'Escape' && overlay.classList.contains('open')) closeModal(); });
+
+  document.getElementById('obsPlain').addEventListener('click', function(){
+    renderNotes('');
+    closeModal();
+    setTimeout(window.print, 80);
+  });
+  document.getElementById('obsConfirm').addEventListener('click', function(){
+    renderNotes(ta.value);
+    closeModal();
+    setTimeout(window.print, 80);
+  });
+
+  /* Intercepta o botão "Imprimir parecer" (#btnPrint) */
+  var btnPrint = document.getElementById('btnPrint');
+  if(btnPrint){
+    btnPrint.addEventListener('click', function(e){
+      e.preventDefault();
+      e.stopPropagation();
+      openModal();
+    });
+  }
+})();
 </script>
 </body>
 </html>
