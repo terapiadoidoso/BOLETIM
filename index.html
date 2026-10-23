@@ -242,7 +242,8 @@ footer p{margin-bottom:8px}
   .rb-l{color:#444}
   .mcard,.ixcard,.okbox,.burden{box-shadow:none;break-inside:avoid;animation:none}
   .bd,.sev,.og,.chip{-webkit-print-color-adjust:exact;print-color-adjust:exact}
-  #obsPrintSection{display:block!important;page-break-inside:avoid;margin-top:28px;padding:18px 22px;border:2px solid var(--teal);border-radius:10px;background:#fff}
+  #obsPrintSection{display:none!important}
+  #obsPrintSection.has-content{display:block!important;page-break-inside:avoid;margin-top:28px;padding:18px 22px;border:2px solid var(--teal);border-radius:10px;background:#fff}
   #obsPrintSection h4{color:var(--teal-deep);font-family:'Bricolage Grotesque',sans-serif;font-size:1.1rem;margin-bottom:10px}
   #obsPrintSection .obs-content{font-size:.92rem;line-height:1.7;color:#000;white-space:pre-wrap;word-wrap:break-word}
   #obsPrintSection .obs-blank{min-height:150px;background-image:repeating-linear-gradient(to bottom,transparent,transparent 27px,#9fb3ac 27px,#9fb3ac 28px)}
@@ -1229,17 +1230,28 @@ document.querySelectorAll(".rv").forEach(el=>io.observe(el));
   var ta = document.getElementById('obsText');
 
   function renderNotes(text){
-    var sec = document.getElementById('obsPrintSection');
-    if(!sec) return;
-    var hasText = text && text.replace(/\s/g,'').length > 0;
-    sec.classList.remove('no-print');
-    sec.classList.add('has-content');
-    var html = '<h4>✎ Observações e orientações do farmacêutico</h4>';
-    html += hasText ? '<div class="obs-content"></div>' : '<div class="obs-content obs-blank"></div>';
-    html += '<div class="obs-meta">Assinatura / carimbo do farmacêutico: _________________________________</div>';
-    sec.innerHTML = html;
-    if(hasText){ sec.querySelector('.obs-content').textContent = text; }
-  }
+var sec = document.getElementById('obsPrintSection');
+if(!sec) return;
+
+var hasText = text && text.replace(/\s/g,'').length > 0;
+
+if(!hasText){
+  sec.innerHTML = '';
+  sec.classList.add('no-print');
+  sec.classList.remove('has-content');
+  return;
+}
+
+sec.classList.remove('no-print');
+sec.classList.add('has-content');
+
+var html = '<h4>✎ Observações e orientações do farmacêutico</h4>';
+html += '<div class="obs-content"></div>';
+html += '<div class="obs-meta">Assinatura / carimbo do farmacêutico: _________________________________</div>';
+
+sec.innerHTML = html;
+sec.querySelector('.obs-content').textContent = text;
+}
 
   function openModal(){
     var sec = document.getElementById('obsPrintSection');
